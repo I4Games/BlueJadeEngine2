@@ -1,0 +1,12 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  BlueJadeII.cpp
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(200): warning C4101: 'sz': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(204): warning C4101: 'hResult': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(203): warning C4101: 'pcch': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(606): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(611): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(664): warning C4101: 'bRet': unreferenced local variable
+  Main.cpp
+  Generating Code...
+  EngineBJ2.0.vcxproj -> \\Mac\Home\Documents\2019Winter\Game3015_GameEngineDev_II\BlueJadeEngineII\EngineBJ2.0\..\Game\EngineBJ2.0.exe

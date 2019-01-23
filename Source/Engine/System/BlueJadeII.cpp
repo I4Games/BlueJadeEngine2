@@ -1,4 +1,4 @@
-//mouse input:
+//mouse input: 
 //https://docs.microsoft.com/en-us/windows/desktop/inputdev/using-mouse-input
 //keyboard input:
 //https://docs.microsoft.com/en-us/windows/desktop/inputdev/using-keyboard-input

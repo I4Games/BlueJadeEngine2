@@ -4,12 +4,13 @@
 //https://docs.microsoft.com/en-us/windows/desktop/inputdev/using-keyboard-input
 
 #include "BlueJadeII.h"
-#include <iostream>
 #include <direct.h>
 #include <string.h>
+#include <string>
 #include <tchar.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <iostream>
 
 using namespace std;
 
@@ -19,25 +20,46 @@ using namespace std;
 bool BlueJadeII::InitInstance(HINSTANCE hInstance, int nCmdShow)
 {
 	if (!IsOnlyInstance("BlueJadeWindow")) {
-		cout << "Another instance of the game is running. Exiting..." << endl;
+		//cout << "Another instance of the game is running. Exiting..." << endl;
+		string msgRAM = "Another instance of the game is running. Exiting... \n";
+		OutputDebugStringA(msgRAM.c_str());
 		return false;
 	}
 	else {
-		cout << "No other instance of the game is running" << endl;
+		//cout << "No other instance of the game is running" << endl;
+		string msgRAM = "No other instance of the game is running \n";
+		OutputDebugStringA(msgRAM.c_str());
 	}
 
 	if (!CheckStorage(DEFAULT_STORAGE_NEEDED)) {
-		cout << "Not enough space on disk. Exiting..." << endl;
+		//cout << "Not enough space on disk. Exiting..." << endl;
+		string msgRAM = "Not enough space on disk. Exiting... \n";
+		OutputDebugStringA(msgRAM.c_str());
 		return false;
 	}
 	else {
-		cout << "Disk has enough space" << endl;
+		//cout << "Disk has enough space" << endl;
+		string msgRAM = "Disk has enough space \n";
+		OutputDebugStringA(msgRAM.c_str());
 	}
 
 	CheckMemory();
 
-	cout << "CPU Architecture: " << GetCPUArchitecture() << endl;
-	cout << "CPU Speed: " << GetCPUSpeed() << " MHz" << endl;
+	//cout << "CPU Architecture: " << GetCPUArchitecture() << endl;
+	//cout << "CPU Speed: " << GetCPUSpeed() << " MHz" << endl;
+
+	string CPUArchi;
+	CPUArchi += "CPU Architecture: ";
+	CPUArchi += GetCPUArchitecture();
+	CPUArchi += " \n";
+	OutputDebugStringA(CPUArchi.c_str());
+
+	string CPUSpeed;
+	CPUSpeed += "CPU Speed: ";
+	CPUSpeed += GetCPUSpeed();
+	CPUSpeed += " MHz \n";
+	OutputDebugStringA(CPUSpeed.c_str());
+
 
 	if (!InitializeWindow(hInstance, nCmdShow)) {
 		return false;
@@ -83,7 +105,9 @@ bool BlueJadeII::CheckStorage(const DWORDLONG diskSpaceNeeded)
 
 	//Determine if we have enough clusters
 	if (diskfree.avail_clusters < neededClusters) {
-		cout << "CheckStorage Failure: Not enough physical storage" << endl;
+		//cout << "CheckStorage Failure: Not enough physical storage" << endl;
+		string msgRAM = "CheckStorage Failure: Not enough physical storage";
+		OutputDebugStringA(msgRAM.c_str());
 		return false;
 	}
 
@@ -97,19 +121,45 @@ void BlueJadeII::CheckMemory()
 	GlobalMemoryStatusEx(&status);
 
 	//Display total RAM available
-	cout << "Total RAM: " << status.ullAvailPhys << " bytes available" << endl;
+	//cout << "Total RAM: " << status.ullAvailPhys << " bytes available" << endl;
+	int tempV = status.ullAvailPhys;
+	string msgRAM;
+	msgRAM += "Total RAM: ";
+	msgRAM += std::to_string(tempV);
+	msgRAM += " bytes available \n";
+	OutputDebugStringA(msgRAM.c_str());
+
 
 	//Display total VRAM available
-	cout << "Total VRAM: " << status.ullAvailVirtual << " bytes available" << endl;
+	//cout << "Total VRAM: " << status.ullAvailVirtual << " bytes available" << endl;
+	int tempvalue = status.ullAvailVirtual;
+	string outmsg;
+	outmsg += "Total VRAM: ";
+	outmsg += std::to_string(tempvalue);
+	outmsg += " bytes available \n";
+	OutputDebugStringA(outmsg.c_str());
+
 
 	//Determine contiguousness of memory (based on the max amount of VRAM the engine would use)
 	char *buff = new char[MAX_CONTIGUOUS_MEMORY_NEEDED];
 	if (buff) {
 		delete[] buff;
-		cout << "The system has " << MAX_CONTIGUOUS_MEMORY_NEEDED << " bytes of memory in a single block available" << endl;
+		//cout << "The system has " << MAX_CONTIGUOUS_MEMORY_NEEDED << " bytes of memory in a single block available" << endl;
+		int tempvalue = MAX_CONTIGUOUS_MEMORY_NEEDED;
+		string outmsg;
+		outmsg += "The system has ";
+		outmsg += std::to_string(tempvalue);
+		outmsg += " bytes of memory in a single block available \n";
+		OutputDebugStringA(outmsg.c_str());
 	}
 	else {
-		cout << "The system does not have " << MAX_CONTIGUOUS_MEMORY_NEEDED << " bytes of memory in a single block available" << endl;
+		//cout << "The system does not have " << MAX_CONTIGUOUS_MEMORY_NEEDED << " bytes of memory in a single block available" << endl;
+		int tempvalue = MAX_CONTIGUOUS_MEMORY_NEEDED;
+		string outmsg;
+		outmsg += "The system does not have ";
+		outmsg += std::to_string(tempvalue);
+		outmsg += " bytes of memory in a single block available \n";
+		OutputDebugStringA(outmsg.c_str());
 	}
 }
 

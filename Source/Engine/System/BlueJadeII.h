@@ -19,6 +19,7 @@ public:
 	bool InitInstance(HINSTANCE hInstance, int nCmdShow);
 	void CloseApp();
 	int MainLoop();
+	void SFMLTest();
 
 	//Window message handler
 	static LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);

@@ -2,7 +2,7 @@
 #include <windows.h>  
 #include <stdlib.h>  
 #include <string.h>  
-#include <tchar.h>  
+#include <tchar.h>	
 
 BlueJadeII* mGameApp = nullptr;
 
@@ -23,6 +23,8 @@ int CALLBACK WinMain(
 		mGameApp->CloseApp();
 		return 1;
 	}
+
+	mGameApp->SFMLTest();
 
 	return mGameApp->MainLoop();
 }

@@ -3,6 +3,7 @@
 //keyboard input:
 //https://docs.microsoft.com/en-us/windows/desktop/inputdev/using-keyboard-input
 
+#include <SFML/Graphics.hpp>
 #include "BlueJadeII.h"
 #include <direct.h>
 #include <string.h>
@@ -622,6 +623,7 @@ LRESULT CALLBACK BlueJadeII::WndProc(HWND hWnd, UINT message, WPARAM wParam, LPA
 
 		ShowCaret(hWnd);
 		EndPaint(hWnd, &ps);
+
 		break;
 
 		// Process other messages. 
@@ -706,6 +708,27 @@ void BlueJadeII::CloseApp()
 	if (m_MutexHandle) {
 		ReleaseMutex(m_MutexHandle);
 		CloseHandle(m_MutexHandle);
+	}
+}
+
+void BlueJadeII::SFMLTest() 
+{
+	sf::RenderWindow window(sf::VideoMode(500, 500), "SFML works!");
+	sf::CircleShape shape(100.f);
+	shape.setFillColor(sf::Color::Green);
+
+	while (window.isOpen())
+	{
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				window.close();
+		}
+
+		window.clear();
+		window.draw(shape);
+		window.display();
 	}
 }
 

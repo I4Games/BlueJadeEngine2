@@ -1,17 +1,22 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   BlueJadeII.cpp
-\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(59): warning C4244: 'argument': conversion from 'DWORD' to '_Elem', possible loss of data
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(64): warning C4244: 'argument': conversion from 'DWORD' to '_Elem', possible loss of data
           with
           [
               _Elem=char
           ]
-\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(125): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'int', possible loss of data
-\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(135): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'int', possible loss of data
-\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(250): warning C4101: 'sz': unreferenced local variable
-\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(254): warning C4101: 'hResult': unreferenced local variable
-\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(253): warning C4101: 'pcch': unreferenced local variable
-\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(656): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
-\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(661): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
-\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(714): warning C4101: 'bRet': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(130): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'int', possible loss of data
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(140): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'int', possible loss of data
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(255): warning C4101: 'sz': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(251): warning C4101: 'nVirtKey': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(259): warning C4101: 'hResult': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(248): warning C4101: 'j': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(256): warning C4101: 'crPrevText': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(258): warning C4101: 'pcch': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(257): warning C4101: 'crPrevBk': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(252): warning C4101: 'szBuf': unreferenced local variable
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(515): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(520): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
+\\mac\home\documents\2019winter\game3015_gameenginedev_ii\bluejadeengineii\source\engine\system\bluejadeii.cpp(573): warning C4101: 'bRet': unreferenced local variable
   EngineBJ2.0.vcxproj -> \\Mac\Home\Documents\2019Winter\Game3015_GameEngineDev_II\BlueJadeEngineII\EngineBJ2.0\..\Game\EngineBJ2.0.exe

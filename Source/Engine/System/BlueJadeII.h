@@ -1,6 +1,7 @@
 #pragma once
 #include <windows.h>
 #include <tchar.h>
+#include "Input/InputManager.h"
 
 #define DEFAULT_STORAGE_NEEDED 314572800
 #define MAX_CONTIGUOUS_MEMORY_NEEDED 314572800
@@ -12,6 +13,7 @@ static TCHAR windowMessage[] = _T("Hello World! This is I4 Games");
 class BlueJadeII {
 public:
 	//Members
+	static InputManager inputManager;
 
 	//Methods
 	bool InitInstance(HINSTANCE hInstance, int nCmdShow);

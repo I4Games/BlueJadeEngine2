@@ -1,59 +1,49 @@
 #pragma once
+#include <SFML/Graphics.hpp>
 #include <windows.h>
 #include <tchar.h>
+#include <direct.h>
+#include <string.h>
+#include <string>
+#include <stdlib.h>
+#include <windows.h>
+#include <iostream>
 
-#define DEFAULT_STORAGE_NEEDED 314572800
-#define MAX_CONTIGUOUS_MEMORY_NEEDED 314572800
-
-static TCHAR szWindowClass[] = _T("Blue Jade APP");
-static TCHAR szTitle[] = _T("Blue Jade Engine 2.0 Game");
-static TCHAR windowMessage[] = _T("Hello World! This is I4 Games");
+using namespace std;
+using namespace sf;
 
 class BlueJadeII {
 public:
 	//Members
 
-	//Methods
-	bool InitInstance(HINSTANCE hInstance, int nCmdShow);
-	void CloseApp();
-	int MainLoop();
-	void SFMLTest();
+	int WindowWidth = 500;
+	int WindowHeight = 500;
+	string WindowTitle = "BlueJade-II";
 
-	//Window message handler
-	static LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
+	BlueJadeII();
+
+	//Methods
+
+	void Start();
+	void CloseApp();
 
 private:
 	/****
 	Members
 	****/
-
-	//The mutex handle for this process
-	HANDLE m_MutexHandle;
-
-	//The current hinstance
-	HINSTANCE m_hInst;
+	RenderWindow window;
 
 	/****
 	Methods
 	****/
 
-	//Check if the current instance is the only one running
-	bool IsOnlyInstance(LPCTSTR gameTitle);
-
-	//Check if we have a certain amount of space on disk
-	bool CheckStorage(const DWORDLONG diskSpaceNeeded);
-
-	//Check RAM and VRAM, as well as how contiguous the VRAM is
-	void CheckMemory();
-
-	//Return cpu speed
-	DWORD GetCPUSpeed();
-
-	//Return cpu architecture
-	LPCTSTR GetCPUArchitecture();
-
 	//Create a new window
-	bool InitializeWindow(HINSTANCE hInstance, int nCmdShow);
+	void InitializeWindow();
 
+	//Called to draw stuff
+	void Render();
+
+	//Called every frame
+	void Update();
 
 };

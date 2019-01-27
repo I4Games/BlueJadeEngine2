@@ -19,12 +19,7 @@ int CALLBACK WinMain(
 {
 	mGameApp = new BlueJadeII();
 
-	if (!mGameApp->InitInstance(hInstance, nCmdShow)) {
-		mGameApp->CloseApp();
-		return 1;
-	}
+	mGameApp->Start();
 
-	mGameApp->SFMLTest();
-
-	return mGameApp->MainLoop();
+	return 0;
 }

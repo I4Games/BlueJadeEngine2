@@ -1,8 +1,8 @@
-﻿Build started 2019-01-26 4:09:00 PM.
-     1>Project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2019-01-26 10:34:36 PM.
+     1>Project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "15.0".
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
-     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
+     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
        Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
        Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
        Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
@@ -15,50 +15,50 @@
        Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('..\Game\' != '' and !HasTrailingSlash('..\Game\')).
        Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
        Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('..\Temp\' != '' and !HasTrailingSlash('..\Temp\')).
-       Task "Error" skipped, due to false condition; ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' ) was evaluated as ( 'X:\Workspace\C++\EngineBJ2.0\obj\' != '' And 'X:\Workspace\C++\EngineBJ2.0\obj\' != 'X:\Workspace\C++\EngineBJ2.0\obj\' ).
-       Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'X:\Workspace\C++\EngineBJ2.0\obj\' ).
+       Task "Error" skipped, due to false condition; ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' ) was evaluated as ( 'X:\Workspace\C++\BlueJadeII\EngineBJ2.0\obj\' != '' And 'X:\Workspace\C++\BlueJadeII\EngineBJ2.0\obj\' != 'X:\Workspace\C++\BlueJadeII\EngineBJ2.0\obj\' ).
+       Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'X:\Workspace\C++\BlueJadeII\EngineBJ2.0\obj\' ).
      1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "EngineBJ2.0.vcxproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.DesignTime.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
+     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.DesignTime.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={BA507651-D89B-4941-B219-5987ADC4D28A}
+         VSTEL_SolutionSessionID={9BDA34CB-7F2F-4BD2-9FA9-A02E56FA4768}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=3677500
+         VSTEL_CurrentSolutionBuildID=22458390
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={58326401-CB73-48AD-8326-F047774BD807}
        Done executing task "SetEnv".
      1>Done building target "SetTelemetryEnvironmentVariables" in project "EngineBJ2.0.vcxproj".
-     1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
+     1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
        Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
      1>Done building target "_PrepareForBuild" in project "EngineBJ2.0.vcxproj".
-     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "_PrepareForReferenceResolution" in project "EngineBJ2.0.vcxproj".
        Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\Source\Engine\System\BlueJadeII.cpp;..\Source\Main.cpp'!='' and 'false'=='true' and '' != 'false').
-     1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "EngineBJ2.0.vcxproj".
-     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
        Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "AssignProjectConfiguration"
        Done executing task "AssignProjectConfiguration".
      1>Done building target "AssignProjectConfiguration" in project "EngineBJ2.0.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
-     1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareProjectReferences" depends on it):
+     1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareProjectReferences" depends on it):
        Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
      1>Done building target "_SplitProjectReferencesByFileExistence" in project "EngineBJ2.0.vcxproj".
-     1>Target "_GetProjectReferenceTargetFrameworkProperties" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareProjectReferences" depends on it):
+     1>Target "_GetProjectReferenceTargetFrameworkProperties" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareProjectReferences" depends on it):
        Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "MSBuild"
        Done executing task "MSBuild".
        Task "GetReferenceNearestTargetFrameworkTask" skipped, due to false condition; ('@(_ProjectReferenceTargetFrameworkPossibilities->Count())' != '0' and '$(ReferringTargetFrameworkForProjectReferences)' != '') was evaluated as ('0' != '0' and '.NETFramework,Version=v4.0' != '').
      1>Done building target "_GetProjectReferenceTargetFrameworkProperties" in project "EngineBJ2.0.vcxproj".
-     1>Target "PrepareProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveProjectReferences" depends on it):
+     1>Target "PrepareProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveProjectReferences" depends on it):
      1>Done building target "PrepareProjectReferences" in project "EngineBJ2.0.vcxproj".
        Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
-     1>Target "ResolveProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "ResolveProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '15.0' != '10.0' and '' != '').
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '15.0' == '10.0' and '' != '').
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
@@ -70,15 +70,15 @@
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
        Target "ResolveProjectReferences" skipped. Previously built successfully.
        Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
-     1>Target "GetFrameworkPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.NETFramework.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "GetFrameworkPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.NETFramework.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
      1>Done building target "GetFrameworkPaths" in project "EngineBJ2.0.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
        Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
        Target "GetFrameworkPaths" skipped. Previously built successfully.
-     1>Target "GetReferenceAssemblyPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "GetReferenceAssemblyPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '')).
      1>Done building target "GetReferenceAssemblyPaths" in project "EngineBJ2.0.vcxproj".
-     1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Current.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Current.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
        Task "SetEnv"
          PATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Windows\SysWow64;;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Boxstarter;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\singh\AppData\Local\Microsoft\WindowsApps;C:\Users\singh\AppData\Roaming\npm;
        Done executing task "SetEnv".
@@ -94,9 +94,9 @@
      1>Done building target "SetBuildDefaultEnvironmentVariables" in project "EngineBJ2.0.vcxproj".
        Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-     1>Target "GetResolvedWinMD" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "GetResolvedWinMD" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
      1>Done building target "GetResolvedWinMD" in project "EngineBJ2.0.vcxproj".
-     1>Target "PlatformPrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Platform.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "PlatformPrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Platform.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(_Error64bitToolsNotInstalled)' == 'true') was evaluated as ('' == 'true').
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == '') was evaluated as (''!='true' and 'true' != 'true' and 'v141' == '').
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v110') was evaluated as (''!='true' and 'true' != 'true' and 'v141' == 'v110').
@@ -104,19 +104,19 @@
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v90') was evaluated as (''!='true' and 'true' != 'true' and 'v141' == 'v90').
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' != 'v90' and '$(PlatformToolset)' != 'v100' and '$(PlatformToolset)' != 'v110') was evaluated as (''!='true' and 'true' != 'true' and 'v141' != 'v90' and 'v141' != 'v100' and 'v141' != 'v110').
      1>Done building target "PlatformPrepareForBuild" in project "EngineBJ2.0.vcxproj".
-     1>Target "_CheckWindowsSDKInstalled" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.WindowsSDK.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "_CheckWindowsSDKInstalled" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.WindowsSDK.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(WindowsSDKInstalled)' != 'true') was evaluated as ('true' != 'true').
        Task "VCMessage" skipped, due to false condition; ('$(WindowsAppContainer)' != 'true' and '$(WindowsSDK_Desktop_Support)' != true) was evaluated as ('false' != 'true' and 'true' != true).
      1>Done building target "_CheckWindowsSDKInstalled" in project "EngineBJ2.0.vcxproj".
        Target "GetFrameworkPaths" skipped. Previously built successfully.
        Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
        Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
-     1>Target "SetCABuildNativeEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\VisualStudio\v15.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "SetCABuildNativeEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\VisualStudio\v15.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForBuild" depends on it):
        Task "SetEnv"
-         CAExcludePath=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Include\um;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Include\um;
+         CAExcludePath=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\atlmfc\include;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Include\um;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Include\um;
        Done executing task "SetEnv".
      1>Done building target "SetCABuildNativeEnvironmentVariables" in project "EngineBJ2.0.vcxproj".
-     1>Target "PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
        Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "MakeDir"
@@ -143,38 +143,38 @@
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
        Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\Source\Engine\System\BlueJadeII.cpp;..\Source\Main.cpp'!='' and 'false'=='true' and '' != 'false').
        Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
-     1>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
      1>Done building target "ResolveSDKReferences" in project "EngineBJ2.0.vcxproj".
        Target "ResolveSDKReferences" skipped. Previously built successfully.
-     1>Target "ExpandSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "ExpandSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
      1>Done building target "ExpandSDKReferences" in project "EngineBJ2.0.vcxproj".
        Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('obj\project.assets.json')).
        Target "ImplicitlyExpandNETStandardFacades" skipped, due to false condition; ('$(ImplicitlyExpandNETStandardFacades)' == 'true') was evaluated as ('' == 'true').
        Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
        Target "ImplicitlyExpandNETStandardFacades" skipped, due to false condition; ('$(ImplicitlyExpandNETStandardFacades)' == 'true') was evaluated as ('' == 'true').
-     1>Target "_HandlePackageFileConflicts" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "_HandlePackageFileConflicts" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Using "ResolvePackageFileConflicts" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\\tools\net46\Microsoft.NET.Build.Extensions.Tasks.dll".
        Task "ResolvePackageFileConflicts"
        Done executing task "ResolvePackageFileConflicts".
      1>Done building target "_HandlePackageFileConflicts" in project "EngineBJ2.0.vcxproj".
-     1>Target "ResolveAssemblyReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "ResolveAssemblyReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
        Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
      1>Done building target "ResolveAssemblyReferences" in project "EngineBJ2.0.vcxproj".
        Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true').
        Target "_RemoveZipFileSuggestedRedirect" skipped, due to false condition; ('$(_TargetFrameworkVersionWithoutV)' >= '4.7.1' And '$(AllowZipFileRedirect)' != 'true') was evaluated as ('4.0' >= '4.7.1' And '' != 'true').
        Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and Exists('$(_GenerateBindingRedirectsIntermediateAppConfig)')) was evaluated as ('' == 'true' and 'true' == 'true' and Exists('..\Temp\EngineBJ2.0.exe.config')).
        Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
-     1>Target "AfterResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "AfterResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "AfterResolveReferences" in project "EngineBJ2.0.vcxproj".
        Target "ImplicitlyExpandDesignTimeFacades" skipped, due to false condition; ('$(ImplicitlyExpandDesignTimeFacades)' == 'true') was evaluated as ('' == 'true').
        Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
-     1>Target "ResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
+     1>Target "ResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
      1>Done building target "ResolveReferences" in project "EngineBJ2.0.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "PrepareForBuild" skipped. Previously built successfully.
-     1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
+     1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
        Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "ReadLinesFromFile"
        Done executing task "ReadLinesFromFile".
@@ -183,18 +183,18 @@
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Creating "..\Temp\EngineBJ2.0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "..\Temp\EngineBJ2.0.tlog\unsuccessfulbuild".
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "EngineBJ2.0.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
-     1>Target "BuildGenerateSourcesTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildGenerateSources" depends on it):
+     1>Target "BuildGenerateSourcesTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildGenerateSources" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
      1>Done building target "BuildGenerateSourcesTraverse" in project "EngineBJ2.0.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "BeforeBuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "BeforeBuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "BeforeBuildGenerateSources" in project "EngineBJ2.0.vcxproj".
-     1>Target "PreBuildEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "PreBuildEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
        Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
      1>Done building target "PreBuildEvent" in project "EngineBJ2.0.vcxproj".
@@ -206,18 +206,18 @@
        Target "InitializeBuildStatus" skipped. Previously built successfully.
        Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
        Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
-     1>Target "_SelectedFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "CopyFileToFolders" depends on it):
+     1>Target "_SelectedFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "CopyFileToFolders" depends on it):
      1>Done building target "_SelectedFiles" in project "EngineBJ2.0.vcxproj".
-     1>Target "CopyFileToFolders" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "CopyFileToFolders" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
        Using "GetOutOfDateItems" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Build.CppTasks.Common.dll".
        Task "GetOutOfDateItems"
        Done executing task "GetOutOfDateItems".
        Task "Copy" skipped, due to false condition; ('@(_OutOfDateCopyFile)' != '') was evaluated as ('' != '').
      1>Done building target "CopyFileToFolders" in project "EngineBJ2.0.vcxproj".
        Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
-     1>Target "_Xsd" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "_Xsd" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "_Xsd" in project "EngineBJ2.0.vcxproj".
-     1>Target "MakeDirsForMidl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Midl" depends on it):
+     1>Target "MakeDirsForMidl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Midl" depends on it):
        Task "Makedir"
        Done executing task "Makedir".
      1>Done building target "MakeDirsForMidl" in project "EngineBJ2.0.vcxproj".
@@ -225,43 +225,43 @@
        Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
        Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
        Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
-     1>Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Midl" depends on it):
+     1>Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Midl" depends on it):
      1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "EngineBJ2.0.vcxproj".
-     1>Target "AfterMidl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Midl" depends on it):
+     1>Target "AfterMidl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Midl" depends on it):
      1>Done building target "AfterMidl" in project "EngineBJ2.0.vcxproj".
-     1>Target "_Midl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "_Midl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "_Midl" in project "EngineBJ2.0.vcxproj".
-     1>Target "AfterBuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "AfterBuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "AfterBuildGenerateSources" in project "EngineBJ2.0.vcxproj".
-     1>Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "AfterBuildGenerateSourcesEvent" in project "EngineBJ2.0.vcxproj".
-     1>Target "_BuildGenerateSourcesAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildGenerateSources" depends on it):
+     1>Target "_BuildGenerateSourcesAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildGenerateSources" depends on it):
      1>Done building target "_BuildGenerateSourcesAction" in project "EngineBJ2.0.vcxproj".
-     1>Target "BuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
+     1>Target "BuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
      1>Done building target "BuildGenerateSources" in project "EngineBJ2.0.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
-     1>Target "BuildCompileTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildCompile" depends on it):
+     1>Target "BuildCompileTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildCompile" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
      1>Done building target "BuildCompileTraverse" in project "EngineBJ2.0.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "BeforeClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "BeforeClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "BeforeClCompile" in project "EngineBJ2.0.vcxproj".
        Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
-     1>Target "ComputeCLInputPDBName" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "ComputeCLInputPDBName" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "ComputeCLInputPDBName" in project "EngineBJ2.0.vcxproj".
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ComputeReferenceCLInput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "ComputeReferenceCLInput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
        Task "WriteLinesToFile" skipped, due to false condition; (('@(_ReferenceCopyLocalPaths)'!='') and '$(DesignTimeBuild)' != 'true') was evaluated as ((''!='') and '' != 'true').
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "ComputeReferenceCLInput" in project "EngineBJ2.0.vcxproj".
-     1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'BlueJadeII.cpp' != 'BlueJadeII.cpp' and '..\Temp\' == '..\Temp\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Main.cpp' != 'Main.cpp' and '..\Temp\' == '..\Temp\').
      1>Done building target "WarnCompileDuplicatedFilename" in project "EngineBJ2.0.vcxproj".
-     1>Target "FixupCLCompileOptions" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "FixupCLCompileOptions" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "FixupCLCompileOptions" in project "EngineBJ2.0.vcxproj".
-     1>Target "MakeDirsForCl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "MakeDirsForCl" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForCl" in project "EngineBJ2.0.vcxproj".
@@ -272,92 +272,81 @@
        Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
        Target "FixupCLCompileOptions" skipped. Previously built successfully.
        Target "_SelectedFiles" skipped. Previously built successfully.
-     1>Target "SelectCustomBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "SelectClCompile" depends on it):
+     1>Target "SelectCustomBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "SelectClCompile" depends on it):
      1>Done building target "SelectCustomBuild" in project "EngineBJ2.0.vcxproj".
-     1>Target "SelectClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ClCompile" depends on it):
+     1>Target "SelectClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ClCompile" depends on it):
      1>Done building target "SelectClCompile" in project "EngineBJ2.0.vcxproj".
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
        Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\Source\Engine\System\BlueJadeII.cpp;..\Source\Main.cpp' != '' and 'false' == 'True').
-     1>Target "ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
        Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and '..\Temp\vc141.pdb' != '' and !Exists(..\Temp\vc141.pdb)).
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '').
        Using "CL" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Build.CppTasks.Common.dll".
        Task "CL"
          Read Tracking Logs:
          	..\Temp\EngineBJ2.0.tlog\CL.read.1.tlog
-         Outputs for X:\WORKSPACE\C++\SOURCE\ENGINE\SYSTEM\BLUEJADEII.CPP|X:\WORKSPACE\C++\SOURCE\MAIN.CPP:
-         	X:\WORKSPACE\C++\TEMP\BLUEJADEII.OBJ
-         	X:\WORKSPACE\C++\TEMP\MAIN.OBJ
-         ..\Source\Engine\System\BlueJadeII.cpp will be compiled because X:\Workspace\C++\Source\Engine\System\BlueJadeII.cpp was modified at 2019-01-26 4:08:57 PM.
-         Outputs for X:\WORKSPACE\C++\SOURCE\ENGINE\SYSTEM\BLUEJADEII.CPP:
-         	X:\WORKSPACE\C++\TEMP\BLUEJADEII.OBJ
+         Outputs for X:\WORKSPACE\C++\BLUEJADEII\SOURCE\ENGINE\SYSTEM\BLUEJADEII.CPP|X:\WORKSPACE\C++\BLUEJADEII\SOURCE\MAIN.CPP:
+         	X:\WORKSPACE\C++\BLUEJADEII\TEMP\BLUEJADEII.OBJ
+         	X:\WORKSPACE\C++\BLUEJADEII\TEMP\MAIN.OBJ
+         ..\Source\Engine\System\BlueJadeII.cpp will be compiled because X:\Workspace\C++\BlueJadeII\Source\Engine\System\BlueJadeII.cpp was modified at 2019-01-26 10:34:28 PM.
+         ..\Source\Main.cpp will be compiled because X:\WORKSPACE\C++\BLUEJADEII\SOURCE\ENGINE\SYSTEM\BLUEJADEII.H was modified at 2019-01-26 10:34:00 PM.
+         No output for X:\WORKSPACE\C++\BLUEJADEII\SOURCE\ENGINE\SYSTEM\BLUEJADEII.CPP|X:\WORKSPACE\C++\BLUEJADEII\SOURCE\MAIN.CPP was found in the tracking log; source compilation required.
          Write Tracking Logs:
          	..\Temp\EngineBJ2.0.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1304
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /I"X:\Workspace\C++\ExternalLibs\SFML-2.5.1\include" /I"X:\Workspace\C++\SFML-2.5.1\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D SFML_STATIC /D _MBCS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"..\Temp\\" /Fd"..\Temp\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\Source\Engine\System\BlueJadeII.cpp
+           VS_UNICODE_OUTPUT=1276
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /I"..\ExternalLibs\SFML-2.5.1\include" /I"X:\Workspace\C++\SFML-2.5.1\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D SFML_STATIC /D _MBCS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"..\Temp\\" /Fd"..\Temp\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\Source\Engine\System\BlueJadeII.cpp ..\Source\Main.cpp
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i X:\Workspace\C++\Temp\EngineBJ2.0.tlog /r X:\WORKSPACE\C++\SOURCE\ENGINE\SYSTEM\BLUEJADEII.CPP /b MSBuildConsole_CancelEvent202cac4eefc4477ba5aa9d48f26cf042  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe"  /c /I"X:\Workspace\C++\ExternalLibs\SFML-2.5.1\include" /I"X:\Workspace\C++\SFML-2.5.1\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D SFML_STATIC /D _MBCS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"..\Temp\\" /Fd"..\Temp\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\Source\Engine\System\BlueJadeII.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i X:\Workspace\C++\BlueJadeII\Temp\EngineBJ2.0.tlog /r "X:\WORKSPACE\C++\BLUEJADEII\SOURCE\ENGINE\SYSTEM\BLUEJADEII.CPP|X:\WORKSPACE\C++\BLUEJADEII\SOURCE\MAIN.CPP" /b MSBuildConsole_CancelEventd82e19f69a1d4b1cbba9021ac9b827e2  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe"  /c /I"..\ExternalLibs\SFML-2.5.1\include" /I"X:\Workspace\C++\SFML-2.5.1\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D SFML_STATIC /D _MBCS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"..\Temp\\" /Fd"..\Temp\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\Source\Engine\System\BlueJadeII.cpp ..\Source\Main.cpp
          BlueJadeII.cpp
-     1>x:\workspace\c++\source\engine\system\bluejadeii.cpp(60): warning C4244: 'argument': conversion from 'DWORD' to '_Elem', possible loss of data
-                 with
-                 [
-                     _Elem=char
-                 ]
-     1>x:\workspace\c++\source\engine\system\bluejadeii.cpp(126): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'int', possible loss of data
-     1>x:\workspace\c++\source\engine\system\bluejadeii.cpp(136): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'int', possible loss of data
-     1>x:\workspace\c++\source\engine\system\bluejadeii.cpp(251): warning C4101: 'sz': unreferenced local variable
-     1>x:\workspace\c++\source\engine\system\bluejadeii.cpp(255): warning C4101: 'hResult': unreferenced local variable
-     1>x:\workspace\c++\source\engine\system\bluejadeii.cpp(254): warning C4101: 'pcch': unreferenced local variable
-     1>x:\workspace\c++\source\engine\system\bluejadeii.cpp(658): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
-     1>x:\workspace\c++\source\engine\system\bluejadeii.cpp(663): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
-     1>x:\workspace\c++\source\engine\system\bluejadeii.cpp(737): warning C4101: 'bRet': unreferenced local variable
+         Main.cpp
+         Generating Code...
        Done executing task "CL".
      1>Done building target "ClCompile" in project "EngineBJ2.0.vcxproj".
        Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
        Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\Source\Engine\System\BlueJadeII.cpp;..\Source\Main.cpp' != '' and 'false' == 'True').
-     1>Target "AfterClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "AfterClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "AfterClCompile" in project "EngineBJ2.0.vcxproj".
-     1>Target "_ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "_ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "_ClCompile" in project "EngineBJ2.0.vcxproj".
        Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
-     1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ResourceCompile" depends on it):
      1>Done building target "BeforeResourceCompile" in project "EngineBJ2.0.vcxproj".
-     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ResourceCompile" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForResourceCompile" in project "EngineBJ2.0.vcxproj".
        Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
-     1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_ResourceCompile" depends on it):
      1>Done building target "AfterResourceCompile" in project "EngineBJ2.0.vcxproj".
-     1>Target "_ResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "_ResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "_ResourceCompile" in project "EngineBJ2.0.vcxproj".
        Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
        Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
-     1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "AfterBuildCompileEvent" in project "EngineBJ2.0.vcxproj".
-     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildCompile" depends on it):
+     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildCompile" depends on it):
      1>Done building target "_BuildCompileAction" in project "EngineBJ2.0.vcxproj".
-     1>Target "BuildCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
+     1>Target "BuildCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
      1>Done building target "BuildCompile" in project "EngineBJ2.0.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
-     1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildLink" depends on it):
+     1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildLink" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
      1>Done building target "BuildLinkTraverse" in project "EngineBJ2.0.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
      1>Done building target "ComputeLegacyManifestEmbedding" in project "EngineBJ2.0.vcxproj".
-     1>Target "BeforeLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "BeforeLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
      1>Done building target "BeforeLink" in project "EngineBJ2.0.vcxproj".
-     1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
+     1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
      1>Done building target "ComputeRCOutputs" in project "EngineBJ2.0.vcxproj".
-     1>Target "ComputeRCGeneratedLinkInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeRCGeneratedLinkInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
      1>Done building target "ComputeRCGeneratedLinkInputs" in project "EngineBJ2.0.vcxproj".
-     1>Target "ComputeManifestGeneratedLinkerInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeManifestGeneratedLinkerInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
      1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "EngineBJ2.0.vcxproj".
-     1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
        Task "CreateItem" skipped, due to false condition; ('%(CustomBuildOutputs.OutputItemType)'!='') was evaluated as (''!='').
        Task "MakeDir"
        Done executing task "MakeDir".
@@ -367,18 +356,18 @@
        Target "ComputeReferenceCLInput" skipped. Previously built successfully.
        Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
        Target "FixupCLCompileOptions" skipped. Previously built successfully.
-     1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
+     1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
      1>Done building target "ComputeCLOutputs" in project "EngineBJ2.0.vcxproj".
-     1>Target "ComputeCLGeneratedLinkInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeCLGeneratedLinkInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
      1>Done building target "ComputeCLGeneratedLinkInputs" in project "EngineBJ2.0.vcxproj".
-     1>Target "ComputeLinkInputsFromProject" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeLinkInputsFromProject" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
      1>Done building target "ComputeLinkInputsFromProject" in project "EngineBJ2.0.vcxproj".
        Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
-     1>Target "ComputeManifestInputsTargets" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeManifestInputsTargets" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
      1>Done building target "ComputeManifestInputsTargets" in project "EngineBJ2.0.vcxproj".
        Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('LINK' == 'LINK' and '' != '').
        Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
-     1>Target "AssignTargetPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Target "AssignTargetPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareResourceNames" depends on it):
        Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
@@ -391,7 +380,7 @@
        Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
      1>Done building target "AssignTargetPaths" in project "EngineBJ2.0.vcxproj".
        Target "AssignTargetPaths" skipped. Previously built successfully.
-     1>Target "SplitResourcesByCulture" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Target "SplitResourcesByCulture" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareResourceNames" depends on it):
        Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
        Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
        Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
@@ -401,41 +390,41 @@
        Done executing task "AssignCulture".
      1>Done building target "SplitResourcesByCulture" in project "EngineBJ2.0.vcxproj".
        Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
-     1>Target "CreateCustomManifestResourceNames" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Target "CreateCustomManifestResourceNames" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareResourceNames" depends on it):
      1>Done building target "CreateCustomManifestResourceNames" in project "EngineBJ2.0.vcxproj".
-     1>Target "PrepareResourceNames" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "PrepareResourceNames" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
      1>Done building target "PrepareResourceNames" in project "EngineBJ2.0.vcxproj".
-     1>Target "MakeDirsForLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "MakeDirsForLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForLink" in project "EngineBJ2.0.vcxproj".
-     1>Target "DoLinkOutputFilesMatch" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "DoLinkOutputFilesMatch" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
        Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('..\Game\EngineBJ2.0.exe' == '').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('..\Game\EngineBJ2.0.exe' != '' and 'X:\Workspace\C++\Game\EngineBJ2.0.exe' != 'X:\Workspace\C++\Game\EngineBJ2.0.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('..\Game\EngineBJ2.0.exe' != '' and 'X:\Workspace\C++\BlueJadeII\Game\EngineBJ2.0.exe' != 'X:\Workspace\C++\BlueJadeII\Game\EngineBJ2.0.exe').
        Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('..\Game\EngineBJ2.0.exe' != '' and '.exe' != '' and '.exe' != '.exe').
        Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('..\Game\EngineBJ2.0.exe' != '' and 'EngineBJ2.0' != '' and 'EngineBJ2.0' != 'EngineBJ2.0').
        Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('' == '' or '' == 'NotSet')).
      1>Done building target "DoLinkOutputFilesMatch" in project "EngineBJ2.0.vcxproj".
-     1>Target "PreLinkEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "PreLinkEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
        Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
      1>Done building target "PreLinkEvent" in project "EngineBJ2.0.vcxproj".
-     1>Target "ComputeLinkSwitches" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Link" depends on it):
+     1>Target "ComputeLinkSwitches" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Link" depends on it):
      1>Done building target "ComputeLinkSwitches" in project "EngineBJ2.0.vcxproj".
-     1>Target "Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
        Using "Link" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Build.CppTasks.Common.dll".
        Task "Link"
          Write Tracking Logs:
          	..\Temp\EngineBJ2.0.tlog\link.write.1.tlog
          Read Tracking Logs:
          	..\Temp\EngineBJ2.0.tlog\link.read.1.tlog
-         Outputs for X:\WORKSPACE\C++\TEMP\BLUEJADEII.OBJ|X:\WORKSPACE\C++\TEMP\MAIN.OBJ:
-         	X:\WORKSPACE\C++\GAME\ENGINEBJ2.0.ILK
-         	X:\WORKSPACE\C++\GAME\ENGINEBJ2.0.EXE
-         	X:\WORKSPACE\C++\GAME\ENGINEBJ2.0.PDB
-         Inputs for X:\WORKSPACE\C++\TEMP\BLUEJADEII.OBJ|X:\WORKSPACE\C++\TEMP\MAIN.OBJ:
+         Outputs for X:\WORKSPACE\C++\BLUEJADEII\TEMP\BLUEJADEII.OBJ|X:\WORKSPACE\C++\BLUEJADEII\TEMP\MAIN.OBJ:
+         	X:\WORKSPACE\C++\BLUEJADEII\GAME\ENGINEBJ2.0.EXE
+         	X:\WORKSPACE\C++\BLUEJADEII\GAME\ENGINEBJ2.0.ILK
+         	X:\WORKSPACE\C++\BLUEJADEII\GAME\ENGINEBJ2.0.PDB
+         Inputs for X:\WORKSPACE\C++\BLUEJADEII\TEMP\BLUEJADEII.OBJ|X:\WORKSPACE\C++\BLUEJADEII\TEMP\MAIN.OBJ:
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.17763.0\UM\X86\WINMM.LIB
-         	X:\WORKSPACE\C++\EXTERNALLIBS\SFML-2.5.1\LIB\FREETYPE.LIB
+         	X:\WORKSPACE\C++\BLUEJADEII\EXTERNALLIBS\SFML-2.5.1\LIB\FREETYPE.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.17763.0\UM\X86\OPENGL32.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.17763.0\UM\X86\KERNEL32.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.17763.0\UM\X86\USER32.LIB
@@ -449,33 +438,33 @@
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.17763.0\UM\X86\UUID.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.17763.0\UM\X86\ODBC32.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.17763.0\UM\X86\ODBCCP32.LIB
-         	X:\WORKSPACE\C++\EXTERNALLIBS\SFML-2.5.1\LIB\SFML-GRAPHICS-S-D.LIB
-         	X:\WORKSPACE\C++\EXTERNALLIBS\SFML-2.5.1\LIB\SFML-WINDOW-S-D.LIB
-         	X:\WORKSPACE\C++\EXTERNALLIBS\SFML-2.5.1\LIB\SFML-SYSTEM-S-D.LIB
-         	X:\WORKSPACE\C++\TEMP\BLUEJADEII.OBJ
-         	X:\WORKSPACE\C++\TEMP\MAIN.OBJ
+         	X:\WORKSPACE\C++\BLUEJADEII\EXTERNALLIBS\SFML-2.5.1\LIB\SFML-GRAPHICS-S-D.LIB
+         	X:\WORKSPACE\C++\BLUEJADEII\EXTERNALLIBS\SFML-2.5.1\LIB\SFML-WINDOW-S-D.LIB
+         	X:\WORKSPACE\C++\BLUEJADEII\EXTERNALLIBS\SFML-2.5.1\LIB\SFML-SYSTEM-S-D.LIB
+         	X:\WORKSPACE\C++\BLUEJADEII\TEMP\BLUEJADEII.OBJ
+         	X:\WORKSPACE\C++\BLUEJADEII\TEMP\MAIN.OBJ
+         	C:\WINDOWS\SYSTEM32\TZRES.DLL
          	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X86\MSVCPRTD.LIB
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X86\MSVCRTD.LIB
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X86\OLDNAMES.LIB
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X86\VCRUNTIMED.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.17763.0\UCRT\X86\UCRTD.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\BIN\HOSTX86\X86\LINK.EXE
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\BIN\10.0.17763.0\X86\RC.EXE
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\BIN\HOSTX86\X86\CVTRES.EXE
-         	C:\WINDOWS\SYSTEM32\TZRES.DLL
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\BIN\HOSTX86\X86\MSPDBSRV.EXE
-         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\BIN\HOSTX86\X86\VCTIP.EXE
-         Source compilation required: input X:\WORKSPACE\C++\TEMP\BLUEJADEII.OBJ is newer than output X:\WORKSPACE\C++\GAME\ENGINEBJ2.0.EXE.
+         Source compilation required: input X:\WORKSPACE\C++\BLUEJADEII\TEMP\BLUEJADEII.OBJ is newer than output X:\WORKSPACE\C++\BLUEJADEII\GAME\ENGINEBJ2.0.EXE.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1568
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"..\Game\EngineBJ2.0.exe" /INCREMENTAL /NOLOGO /LIBPATH:"X:\Workspace\C++\ExternalLibs\SFML-2.5.1\lib" /LIBPATH:"X:\Workspace\C++\SFML-2.5.1\lib" winmm.lib freetype.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"..\Game\EngineBJ2.0.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\Game\EngineBJ2.0.lib" /MACHINE:X86 ..\Temp\BlueJadeII.obj
+           VS_UNICODE_OUTPUT=1032
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"..\Game\EngineBJ2.0.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\ExternalLibs\SFML-2.5.1\lib" /LIBPATH:"X:\Workspace\C++\SFML-2.5.1\lib" winmm.lib freetype.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"..\Game\EngineBJ2.0.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\Game\EngineBJ2.0.lib" /MACHINE:X86 ..\Temp\BlueJadeII.obj
          ..\Temp\Main.obj
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i X:\Workspace\C++\Temp\EngineBJ2.0.tlog /r "X:\WORKSPACE\C++\TEMP\BLUEJADEII.OBJ|X:\WORKSPACE\C++\TEMP\MAIN.OBJ" /b MSBuildConsole_CancelEvent4b4e33ebe8174f52a681e3919e116362  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"..\Game\EngineBJ2.0.exe" /INCREMENTAL /NOLOGO /LIBPATH:"X:\Workspace\C++\ExternalLibs\SFML-2.5.1\lib" /LIBPATH:"X:\Workspace\C++\SFML-2.5.1\lib" winmm.lib freetype.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"..\Game\EngineBJ2.0.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\Game\EngineBJ2.0.lib" /MACHINE:X86 ..\Temp\BlueJadeII.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i X:\Workspace\C++\BlueJadeII\Temp\EngineBJ2.0.tlog /r "X:\WORKSPACE\C++\BLUEJADEII\TEMP\BLUEJADEII.OBJ|X:\WORKSPACE\C++\BLUEJADEII\TEMP\MAIN.OBJ" /b MSBuildConsole_CancelEvent2b3dbcf67a73428b8c37f1488f12b8c8  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"..\Game\EngineBJ2.0.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\ExternalLibs\SFML-2.5.1\lib" /LIBPATH:"X:\Workspace\C++\SFML-2.5.1\lib" winmm.lib freetype.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"..\Game\EngineBJ2.0.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\Game\EngineBJ2.0.lib" /MACHINE:X86 ..\Temp\BlueJadeII.obj
          ..\Temp\Main.obj
        Done executing task "Link".
        Task "Message"
-         EngineBJ2.0.vcxproj -> X:\Workspace\C++\EngineBJ2.0\..\Game\EngineBJ2.0.exe
+         EngineBJ2.0.vcxproj -> X:\Workspace\C++\BlueJadeII\EngineBJ2.0\..\Game\EngineBJ2.0.exe
        Done executing task "Message".
        Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
                     %(Link.GenerateDebugInformation) == 'DebugFastLink' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
@@ -487,20 +476,20 @@
        Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
        Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false') was evaluated as ('false'!='' and 'false'!='false').
        Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
-     1>Target "ComputeLinkImportLibraryOutputsForClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeLinkImportLibraryOutputsForClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
        Task "WriteLinesToFile" skipped, due to false condition; ('@(_LinkSecondaryOutput)' != '') was evaluated as ('' != '').
      1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "EngineBJ2.0.vcxproj".
-     1>Target "AfterLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
+     1>Target "AfterLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_Link" depends on it):
      1>Done building target "AfterLink" in project "EngineBJ2.0.vcxproj".
-     1>Target "_Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_Link" in project "EngineBJ2.0.vcxproj".
-     1>Target "_ALink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_ALink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_ALink" in project "EngineBJ2.0.vcxproj".
        Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
-     1>Target "_Manifest" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Manifest" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
      1>Done building target "_Manifest" in project "EngineBJ2.0.vcxproj".
-     1>Target "RegisterOutput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "RegisterOutput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
        Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
        Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
@@ -509,64 +498,64 @@
      1>Done building target "RegisterOutput" in project "EngineBJ2.0.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_XdcMake" depends on it):
+     1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_XdcMake" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
      1>Done building target "ResolvedXDCMake" in project "EngineBJ2.0.vcxproj".
-     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_XdcMake" depends on it):
+     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_XdcMake" depends on it):
      1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "EngineBJ2.0.vcxproj".
-     1>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_XdcMake" depends on it):
+     1>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_XdcMake" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForXdcMake" in project "EngineBJ2.0.vcxproj".
        Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
-     1>Target "_XdcMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_XdcMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_XdcMake" in project "EngineBJ2.0.vcxproj".
-     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BscMake" depends on it):
+     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BscMake" depends on it):
      1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "EngineBJ2.0.vcxproj".
-     1>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BscMake" depends on it):
+     1>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BscMake" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForBscMake" in project "EngineBJ2.0.vcxproj".
        Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
        Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-     1>Target "_BscMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_BscMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_BscMake" in project "EngineBJ2.0.vcxproj".
-     1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+     1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
        Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
        Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
      1>Done building target "_GenerateSatelliteAssemblyInputs" in project "EngineBJ2.0.vcxproj".
        Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
        Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
-     1>Target "CreateSatelliteAssemblies" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "CreateSatelliteAssemblies" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "CreateSatelliteAssemblies" in project "EngineBJ2.0.vcxproj".
-     1>Target "_Appverifier" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Appverifier" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_Appverifier" in project "EngineBJ2.0.vcxproj".
-     1>Target "_Deploy" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Deploy" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_Deploy" in project "EngineBJ2.0.vcxproj".
        Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
        Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
        Target "AssignTargetPaths" skipped. Previously built successfully.
        Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
        Target "_GetProjectReferenceTargetFrameworkProperties" skipped. Previously built successfully.
-     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
      1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "EngineBJ2.0.vcxproj".
-     1>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+     1>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
        Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
      1>Done building target "GetCopyToOutputDirectoryItems" in project "EngineBJ2.0.vcxproj".
        Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
        Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
-     1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
      1>Done building target "_CopySourceItemsToOutputDirectory" in project "EngineBJ2.0.vcxproj".
        Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
        Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
-     1>Target "_CheckForCompileOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Target "_CheckForCompileOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
      1>Done building target "_CheckForCompileOutputs" in project "EngineBJ2.0.vcxproj".
        Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-     1>Target "CopyFilesToOutputDirectory" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForRun" depends on it):
+     1>Target "CopyFilesToOutputDirectory" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "PrepareForRun" depends on it):
        Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
        Task "CopyRefAssembly" skipped, due to false condition; ('$(ProduceReferenceAssembly)' == 'true' and '$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('false' == 'true' and 'true' == 'true' and 'true' != 'true').
        Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
@@ -579,20 +568,20 @@
        Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
        Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
      1>Done building target "CopyFilesToOutputDirectory" in project "EngineBJ2.0.vcxproj".
-     1>Target "PrepareForRun" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "PrepareForRun" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "PrepareForRun" in project "EngineBJ2.0.vcxproj".
        Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-     1>Target "PostBuildEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "PostBuildEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
        Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
      1>Done building target "PostBuildEvent" in project "EngineBJ2.0.vcxproj".
-     1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildLink" depends on it):
+     1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "BuildLink" depends on it):
      1>Done building target "_BuildLinkAction" in project "EngineBJ2.0.vcxproj".
-     1>Target "BuildLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
+     1>Target "BuildLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
      1>Done building target "BuildLink" in project "EngineBJ2.0.vcxproj".
-     1>Target "AfterBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
+     1>Target "AfterBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
      1>Done building target "AfterBuild" in project "EngineBJ2.0.vcxproj".
-     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
+     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (target "Build" depends on it):
        Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Delete"
          Deleting file "..\Temp\EngineBJ2.0.tlog\unsuccessfulbuild".
@@ -603,34 +592,21 @@
      1>Done building target "FinalizeBuildStatus" in project "EngineBJ2.0.vcxproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "Build" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (entry point):
+     1>Target "Build" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (entry point):
      1>Done building target "Build" in project "EngineBJ2.0.vcxproj".
-     1>Done Building Project "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (Build target(s)).
+     1>Done Building Project "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-       "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (Build target) (1) ->
+       "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (Build target) (1) ->
        (PrepareForBuild target) -> 
          C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 
 
-       "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (Build target) (1) ->
+       "X:\Workspace\C++\BlueJadeII\EngineBJ2.0\EngineBJ2.0.vcxproj" (Build target) (1) ->
          C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
 
-
-       "X:\Workspace\C++\EngineBJ2.0\EngineBJ2.0.vcxproj" (Build target) (1) ->
-       (ClCompile target) -> 
-         x:\workspace\c++\source\engine\system\bluejadeii.cpp(60): warning C4244: 'argument': conversion from 'DWORD' to '_Elem', possible loss of data
-         x:\workspace\c++\source\engine\system\bluejadeii.cpp(126): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'int', possible loss of data
-         x:\workspace\c++\source\engine\system\bluejadeii.cpp(136): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'int', possible loss of data
-         x:\workspace\c++\source\engine\system\bluejadeii.cpp(251): warning C4101: 'sz': unreferenced local variable
-         x:\workspace\c++\source\engine\system\bluejadeii.cpp(255): warning C4101: 'hResult': unreferenced local variable
-         x:\workspace\c++\source\engine\system\bluejadeii.cpp(254): warning C4101: 'pcch': unreferenced local variable
-         x:\workspace\c++\source\engine\system\bluejadeii.cpp(658): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
-         x:\workspace\c++\source\engine\system\bluejadeii.cpp(663): warning C4302: 'type cast': truncation from 'LPSTR' to 'WORD'
-         x:\workspace\c++\source\engine\system\bluejadeii.cpp(737): warning C4101: 'bRet': unreferenced local variable
-
-    11 Warning(s)
+    2 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:04.58
+Time Elapsed 00:00:05.58

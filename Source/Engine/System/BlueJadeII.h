@@ -41,6 +41,7 @@ protected:
 	****/
 	RenderWindow window;
 	GameObjectManager* gameObjectManager;
+	Clock clock;
 
 	HANDLE m_MutexHandle;
 

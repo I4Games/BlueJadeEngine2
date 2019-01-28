@@ -1,22 +1,27 @@
-#pragma once
+#ifndef BLUEJADE_GAMEOBJECT
+#define BLUEJADE_GAMEOBJECT
 
 #include <vector>
 #include <SFML/Graphics.hpp>
 
 using namespace sf;
 
+class BaseComponent;
+class TransformComponent;
+
 class GameObject {
 public:
-	GameObject(std::string &name) { parent = NULL; this->name = name; }
+	GameObject(std::string &name);
 	~GameObject(void);
 
-	void SetTransform(const Transform &matrix) { transform = matrix; }
-	Transform GetTransform() { return transform; }
-	Transform GetWorldTransform() { return worldTransform; }
-	std::string GetName() { return name; }
-
-	void SetParent(GameObject* p) { parent = p; }
+	TransformComponent* GetTransform();
+	std::string GetName();
+	GameObject* GetParent();
+	
+	void SetParent(GameObject* p);
 	void AddChild(GameObject* s);
+	void AddComponent(BaseComponent* c);
+
 	GameObject* FindChildByName(std::string &name);
 
 	virtual void Update(float msec);
@@ -24,7 +29,9 @@ public:
 protected:
 	GameObject* parent;
 	std::string name;
-	Transform worldTransform;
-	Transform transform;
+	TransformComponent* transform;
 	std::vector<GameObject*> children;
+	std::vector<BaseComponent*> components;
 };
+
+#endif

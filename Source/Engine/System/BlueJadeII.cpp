@@ -190,9 +190,10 @@ void BlueJadeII::Update()
 			if (event.type == Event::Closed)
 				window.close();
 		}
-		
-		Render();
 
+		Time elapsed = clock.restart();
+		gameObjectManager->Update(elapsed.asMilliseconds());
+		Render();
 	}
 }
 

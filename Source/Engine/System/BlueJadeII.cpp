@@ -4,6 +4,7 @@
 //https://docs.microsoft.com/en-us/windows/desktop/inputdev/using-keyboard-input
 
 #include "BlueJadeII.h"
+#include "Input/InputManager.h"
 #include <direct.h>
 #include <string.h>
 #include <string>
@@ -14,8 +15,12 @@
 
 using namespace std;
 
+
+
 #define BUFSIZE 65535 
 #define SHIFTED 0x8000 
+
+InputManager BlueJadeII::inputManager = InputManager();
 
 bool BlueJadeII::InitInstance(HINSTANCE hInstance, int nCmdShow)
 {
@@ -452,153 +457,7 @@ LRESULT CALLBACK BlueJadeII::WndProc(HWND hWnd, UINT message, WPARAM wParam, LPA
 		break;
 
 	case WM_KEYDOWN:
-		switch (wParam)
-		{
-		case VK_LEFT:   // LEFT ARROW 
-
-			// The caret can move only to the beginning of 
-			// the current line. 
-
-			if (nCaretPosX > 0)
-			{
-				HideCaret(hWnd);
-
-				// Retrieve the character to the left of 
-				// the caret, calculate the character's 
-				// width, then subtract the width from the 
-				// current horizontal position of the caret 
-				// to obtain the new position. 
-
-				ch = pchInputBuf[--nCurChar];
-				hdc = GetDC(hWnd);
-				GetCharWidth32(hdc, ch, ch, &nCharWidth);
-				ReleaseDC(hWnd, hdc);
-				nCaretPosX = max(nCaretPosX - nCharWidth,
-					0);
-				ShowCaret(hWnd);
-			}
-			break;
-
-		case VK_RIGHT:  // RIGHT ARROW 
-
-			// Caret moves to the right or, when a carriage 
-			// return is encountered, to the beginning of 
-			// the next line. 
-
-			if (nCurChar < cch)
-			{
-				HideCaret(hWnd);
-
-				// Retrieve the character to the right of 
-				// the caret. If it's a carriage return, 
-				// position the caret at the beginning of 
-				// the next line. 
-
-				ch = pchInputBuf[nCurChar];
-				if (ch == 0x0D)
-				{
-					nCaretPosX = 0;
-					nCaretPosY++;
-				}
-
-				// If the character isn't a carriage 
-				// return, check to see whether the SHIFT 
-				// key is down. If it is, invert the text 
-				// colors and output the character. 
-
-				else
-				{
-					hdc = GetDC(hWnd);
-					nVirtKey = GetKeyState(VK_SHIFT);
-					if (nVirtKey & SHIFTED)
-					{
-						crPrevText = SetTextColor(hdc,
-							RGB(255, 255, 255));
-						crPrevBk = SetBkColor(hdc,
-							RGB(0, 0, 0));
-						TextOut(hdc, nCaretPosX,
-							nCaretPosY * dwCharY,
-							&ch, 1);
-						SetTextColor(hdc, crPrevText);
-						SetBkColor(hdc, crPrevBk);
-					}
-
-					// Get the width of the character and 
-					// calculate the new horizontal 
-					// position of the caret. 
-
-					GetCharWidth32(hdc, ch, ch, &nCharWidth);
-					ReleaseDC(hWnd, hdc);
-					nCaretPosX = nCaretPosX + nCharWidth;
-				}
-				nCurChar++;
-				ShowCaret(hWnd);
-				break;
-			}
-			break;
-
-		case VK_UP:     // UP ARROW 
-		case VK_DOWN:   // DOWN ARROW 
-			MessageBeep((UINT)-1);
-			return 0;
-
-		case VK_HOME:   // HOME 
-			// Set the caret's position to the upper left 
-			// corner of the client area. 
-			nCaretPosX = nCaretPosY = 0;
-			nCurChar = 0;
-			break;
-
-		case VK_END:    // END  
-
-			// Move the caret to the end of the text. 
-
-			for (i = 0; i < cch; i++)
-			{
-				// Count the carriage returns and save the 
-				// index of the last one. 
-
-				if (pchInputBuf[i] == 0x0D)
-				{
-					cCR++;
-					nCRIndex = i + 1;
-				}
-			}
-			nCaretPosY = cCR;
-
-			// Copy all text between the last carriage 
-			// return and the end of the keyboard input 
-			// buffer to a temporary buffer. 
-
-			for (i = nCRIndex, j = 0; i < cch; i++, j++)
-				szBuf[j] = pchInputBuf[i];
-			szBuf[j] = TEXT('\0');
-
-			// Retrieve the text extent and use it 
-			// to set the horizontal position of the 
-			// caret. 
-
-			hdc = GetDC(hWnd);
-			//HRESULT StringCchLength(LPTSTR psz, size_t cchMax, size_t *pcch);
-			//pcch = 0;
-			//hResult = StringCchLength(szBuf, 128, pcch);
-			//if (FAILED(hResult))
-			//{
-			//	// TODO: write error handler
-			//}
-			/*GetTextExtentPoint32(hdc, szBuf, *pcch,
-				&sz);*/
-				//nCaretPosX = sz.cx;
-			ReleaseDC(hWnd, hdc);
-			nCurChar = cch;
-			break;
-
-		default:
-			break;
-		}
-		SetCaretPos(nCaretPosX, nCaretPosY * dwCharY);
-		break;
-
+		inputManager.m_keyboardHandler->VOnKeyDown(wParam);
 	case WM_PAINT:
 		hdc = BeginPaint(hWnd, &ps);
 

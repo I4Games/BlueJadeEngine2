@@ -9,6 +9,11 @@
 #include <windows.h>
 #include <iostream>
 
+#define DEFAULT_STORAGE_NEEDED 314572800
+#define MAX_CONTIGUOUS_MEMORY_NEEDED 314572800
+#define MB_CONVERSION 1048576
+#define GB_CONVERSION 1073741824
+
 using namespace std;
 using namespace sf;
 
@@ -26,6 +31,7 @@ public:
 
 	void Start();
 	void CloseApp();
+	bool InitializeEngine();
 
 private:
 	/****
@@ -33,9 +39,26 @@ private:
 	****/
 	RenderWindow window;
 
+	HANDLE m_MutexHandle;
+
 	/****
 	Methods
 	****/
+
+	//Check if there is another instance of the engine running
+	bool IsOnlyInstance();
+
+	//Check if the platform has enough storage
+	bool CheckStorage();
+
+	//Display Memory Information
+	void DisplayMemoryInfo();
+
+	//Get CPU Architecture
+	string GetCPUArchitecture();
+
+	//Get CPU Speed
+	int GetCPUSpeed();
 
 	//Create a new window
 	void InitializeWindow();

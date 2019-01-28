@@ -19,6 +19,10 @@ int CALLBACK WinMain(
 {
 	mGameApp = new BlueJadeII();
 
+	if (!mGameApp->InitializeEngine()) {
+		cout << "Failed to initialize the instance" << endl;
+		return 1;
+	}
 	mGameApp->Start();
 
 	return 0;

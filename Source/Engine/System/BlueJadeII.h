@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <iostream>
+#include "Scene\GameObjectManager.h"
 
 #define DEFAULT_STORAGE_NEEDED 314572800
 #define MAX_CONTIGUOUS_MEMORY_NEEDED 314572800
@@ -32,12 +33,14 @@ public:
 	void Start();
 	void CloseApp();
 	bool InitializeEngine();
+	void InitializeSystems();
 
-private:
+protected:
 	/****
 	Members
 	****/
 	RenderWindow window;
+	GameObjectManager* gameObjectManager;
 
 	HANDLE m_MutexHandle;
 

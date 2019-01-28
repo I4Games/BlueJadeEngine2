@@ -9,6 +9,10 @@ BlueJadeII::BlueJadeII()
 {
 }
 
+void BlueJadeII::InitializeSystems() {
+	gameObjectManager = new GameObjectManager();
+}
+
 bool BlueJadeII::InitializeEngine() 
 {
 	if (!IsOnlyInstance()) {
@@ -31,6 +35,7 @@ bool BlueJadeII::InitializeEngine()
 	cout << "CPU Speed: " << GetCPUSpeed() << " MHz" << endl;
 
 	this->InitializeWindow();
+	this->InitializeSystems();
 
 	return true;
 }

@@ -22,8 +22,8 @@ class BlueJadeII {
 public:
 	//Members
 
-	int WindowWidth = 500;
-	int WindowHeight = 500;
+	int WindowWidth = 1000;
+	int WindowHeight = 700;
 	string WindowTitle = "BlueJade-II";
 
 	BlueJadeII();
@@ -44,6 +44,9 @@ protected:
 	Clock clock;
 
 	HANDLE m_MutexHandle;
+
+	enum GameState {Uninitialized, Initializing, ShowingSplash, Paused, Playing, Exiting};
+	GameState gameState;
 
 	/****
 	Methods
@@ -68,7 +71,7 @@ protected:
 	void InitializeWindow();
 
 	//Display the splash screen
-	int Splash();
+	void Splash(RenderWindow& renderWindow);
 
 	//Called to draw stuff
 	void Render();

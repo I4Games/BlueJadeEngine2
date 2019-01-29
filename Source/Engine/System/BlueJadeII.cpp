@@ -4,10 +4,7 @@
 
 BlueJadeII::BlueJadeII()
 {
-}
-
-void BlueJadeII::InitializeSystems() {
-	gameObjectManager = new GameObjectManager();
+	gameState = Uninitialized;
 }
 
 bool BlueJadeII::InitializeEngine() 
@@ -31,11 +28,68 @@ bool BlueJadeII::InitializeEngine()
 	cout << "CPU Architecture: " << GetCPUArchitecture() << endl;
 	cout << "CPU Speed: " << GetCPUSpeed() << " MHz" << endl;
 
-	this->Splash();
 	this->InitializeWindow();
+	this->Splash(window);
+
+	if (gameState == Exiting) {
+		return false;
+	}
+
 	this->InitializeSystems();
 
 	return true;
+}
+
+void BlueJadeII::InitializeSystems() {
+	gameObjectManager = new GameObjectManager();
+	gameState = Playing;
+}
+
+void BlueJadeII::Splash(RenderWindow& renderWindow)
+{
+	Clock clock;
+	Time timeToClose = seconds(5.f);
+
+	Image BJ2Logo;
+	if (!BJ2Logo.loadFromFile("../Assets/BJ2Logo.png"))
+		return;
+
+	Texture logoTexture;
+	logoTexture.loadFromImage(BJ2Logo);
+	Sprite logoSprite;
+	logoSprite.setTexture(logoTexture);
+
+	Vector2f windowSize = window.getView().getSize();
+
+	logoSprite.setScale(
+		windowSize.x / logoSprite.getLocalBounds().width,
+		windowSize.y / logoSprite.getLocalBounds().height
+	);
+	renderWindow.draw(logoSprite);
+	renderWindow.display();
+
+	//Set up events/conditions for the splash screen to transition into the app later
+	Event e;
+	while (gameState == ShowingSplash) {
+		while (window.pollEvent(e)) {
+			if (e.type == sf::Event::EventType::Closed) {
+				gameState = Exiting;
+				return;
+			}
+		}
+		timeToClose -= clock.restart();
+		if (timeToClose.asSeconds() <= 0) {
+			gameState = Initializing;
+			return;
+		}
+	}
+
+}
+
+void BlueJadeII::InitializeWindow()
+{
+	window.create(VideoMode(WindowWidth, WindowHeight), WindowTitle);
+	gameState = ShowingSplash;
 }
 
 bool BlueJadeII::IsOnlyInstance() 
@@ -162,60 +216,6 @@ int BlueJadeII::GetCPUSpeed() {
 	return dwMHz;
 }
 
-int BlueJadeII::Splash()
-{
-	Clock clock;
-	Time timeSinceLastUpdate = Time::Zero;
-	Time timeToClose = seconds(5.f);
-
-	RenderWindow Splash(VideoMode(1024, 768), "Blue Jade II Splash Screen");
-
-	Image BJ2Logo;
-	if (!BJ2Logo.loadFromFile("../Assets/BJ2Logo.png"))
-		return EXIT_FAILURE;
-
-	Texture logoTexture;
-	logoTexture.loadFromImage(BJ2Logo);
-	Sprite logoSprite;
-	logoSprite.setTexture(logoTexture);
-
-	while (Splash.isOpen())
-	{
-		sf::Event Event;
-		Time dt = clock.restart();
-		timeSinceLastUpdate += dt;
-
-		while (timeSinceLastUpdate > timeToClose)
-		{
-			Splash.close();
-		}
-
-		while (Splash.pollEvent(Event))
-		{
-			// Close window : exit
-			if (Event.type == Event::Closed)
-				Splash.close();
-
-			if (Event.type == Event::KeyPressed)
-			{
-				// Escape key : exit
-				if (Event.key.code == Keyboard::Escape)
-					Splash.close();
-			}
-
-			Splash.clear();
-			Splash.draw(logoSprite);
-			Splash.display();
-		}
-	}
-	return EXIT_SUCCESS;
-}
-
-void BlueJadeII::InitializeWindow() 
-{
-	window.create(VideoMode(WindowWidth, WindowHeight), WindowTitle);
-}
-
 
 void BlueJadeII::Render()
 {
@@ -229,14 +229,15 @@ void BlueJadeII::Render()
 
 void BlueJadeII::Update()
 {
-	
-	while (window.isOpen())
+	while (gameState != Exiting)
 	{
 		Event event;
 		while (window.pollEvent(event))
 		{
-			if (event.type == Event::Closed)
+			if (event.type == Event::Closed) {
 				window.close();
+				gameState = Exiting;
+			}
 		}
 
 		Time elapsed = clock.restart();

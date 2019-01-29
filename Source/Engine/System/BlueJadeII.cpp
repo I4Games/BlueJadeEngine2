@@ -1,7 +1,4 @@
-//mouse input: 
-//https://docs.microsoft.com/en-us/windows/desktop/inputdev/using-mouse-input
-//keyboard input:
-//https://docs.microsoft.com/en-us/windows/desktop/inputdev/using-keyboard-input
+#include <SFML/Graphics.hpp>
 
 #include "BlueJadeII.h"
 
@@ -34,6 +31,7 @@ bool BlueJadeII::InitializeEngine()
 	cout << "CPU Architecture: " << GetCPUArchitecture() << endl;
 	cout << "CPU Speed: " << GetCPUSpeed() << " MHz" << endl;
 
+	this->Splash();
 	this->InitializeWindow();
 	this->InitializeSystems();
 
@@ -164,10 +162,60 @@ int BlueJadeII::GetCPUSpeed() {
 	return dwMHz;
 }
 
+int BlueJadeII::Splash()
+{
+	Clock clock;
+	Time timeSinceLastUpdate = Time::Zero;
+	Time timeToClose = seconds(5.f);
+
+	RenderWindow Splash(VideoMode(1024, 768), "Blue Jade II Splash Screen");
+
+	Image BJ2Logo;
+	if (!BJ2Logo.loadFromFile("../Assets/BJ2Logo.png"))
+		return EXIT_FAILURE;
+
+	Texture logoTexture;
+	logoTexture.loadFromImage(BJ2Logo);
+	Sprite logoSprite;
+	logoSprite.setTexture(logoTexture);
+
+	while (Splash.isOpen())
+	{
+		sf::Event Event;
+		Time dt = clock.restart();
+		timeSinceLastUpdate += dt;
+
+		while (timeSinceLastUpdate > timeToClose)
+		{
+			Splash.close();
+		}
+
+		while (Splash.pollEvent(Event))
+		{
+			// Close window : exit
+			if (Event.type == Event::Closed)
+				Splash.close();
+
+			if (Event.type == Event::KeyPressed)
+			{
+				// Escape key : exit
+				if (Event.key.code == Keyboard::Escape)
+					Splash.close();
+			}
+
+			Splash.clear();
+			Splash.draw(logoSprite);
+			Splash.display();
+		}
+	}
+	return EXIT_SUCCESS;
+}
+
 void BlueJadeII::InitializeWindow() 
 {
 	window.create(VideoMode(WindowWidth, WindowHeight), WindowTitle);
 }
+
 
 void BlueJadeII::Render()
 {

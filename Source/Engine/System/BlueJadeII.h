@@ -67,6 +67,9 @@ protected:
 	//Create a new window
 	void InitializeWindow();
 
+	//Display the splash screen
+	int Splash();
+
 	//Called to draw stuff
 	void Render();
 

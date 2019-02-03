@@ -9,6 +9,7 @@
 #include <windows.h>
 #include <iostream>
 #include "Scene\GameObjectManager.h"
+#include "Graphics\GraphicsSystem.h"
 
 #define DEFAULT_STORAGE_NEEDED 314572800
 #define MAX_CONTIGUOUS_MEMORY_NEEDED 314572800
@@ -39,10 +40,10 @@ protected:
 	/****
 	Members
 	****/
-	RenderWindow window;
+	GraphicsSystem* graphicsSystem;
 	GameObjectManager* gameObjectManager;
-	Clock clock;
 
+	Clock clock;
 	HANDLE m_MutexHandle;
 
 	enum GameState {Uninitialized, Initializing, ShowingSplash, Paused, Playing, Exiting};
@@ -71,7 +72,7 @@ protected:
 	void InitializeWindow();
 
 	//Display the splash screen
-	void Splash(RenderWindow& renderWindow);
+	void Splash();
 
 	//Called to draw stuff
 	void Render();

@@ -13,6 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{1980e9ba-df94-4efd-bbc3-ad10b3844273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{77278c64-4e35-4348-b12f-1287f09d1264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{b8edad95-8f57-47e9-8d6a-349a0494d7ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene\Component">
+      <UniqueIdentifier>{f628d0a7-780f-4ac9-bff8-8a1183319f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{832ee3a5-633d-402f-af43-1b55a1b0df5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{d48d1aef-2e3b-4faf-91e3-74e84638f0a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Component">
+      <UniqueIdentifier>{5db88471-20e8-4da4-b333-10de8520b7a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Main.cpp">
@@ -21,20 +42,23 @@
     <ClCompile Include="..\Source\Engine\System\BlueJadeII.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Source\Engine\System\Scene\GameObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Source\Engine\System\Scene\GameObjectManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Source\Engine\System\Scene\Component\TransformComponent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\Source\Engine\System\Input\KeyboardHandler.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Input</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\Engine\System\Scene\Component\BaseComponent.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\GameObject.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\GameObjectManager.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\TransformComponent.cpp">
+      <Filter>Source Files\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Graphics\GraphicsSystem.cpp">
+      <Filter>Source Files\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -42,22 +66,25 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Scene\GameObject.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Scene</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Scene\GameObjectManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\Engine\System\Scene\Component\BaseComponent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\Engine\System\Scene\Component\TransformComponent.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Scene</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Input\InputInterfaces.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Input</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Input\InputManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\BaseComponent.h">
+      <Filter>Header Files\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\TransformComponent.h">
+      <Filter>Header Files\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Graphics\GraphicsSystem.h">
+      <Filter>Header Files\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

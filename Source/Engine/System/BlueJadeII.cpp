@@ -29,7 +29,7 @@ bool BlueJadeII::InitializeEngine()
 	cout << "CPU Speed: " << GetCPUSpeed() << " MHz" << endl;
 
 	this->InitializeWindow();
-	this->Splash(window);
+	this->Splash();
 
 	if (gameState == Exiting) {
 		return false;
@@ -45,28 +45,13 @@ void BlueJadeII::InitializeSystems() {
 	gameState = Playing;
 }
 
-void BlueJadeII::Splash(RenderWindow& renderWindow)
+void BlueJadeII::Splash()
 {
 	Clock clock;
 	Time timeToClose = seconds(5.f);
 
-	Image BJ2Logo;
-	if (!BJ2Logo.loadFromFile("../Assets/BJ2Logo.png"))
-		return;
-
-	Texture logoTexture;
-	logoTexture.loadFromImage(BJ2Logo);
-	Sprite logoSprite;
-	logoSprite.setTexture(logoTexture);
-
-	Vector2f windowSize = window.getView().getSize();
-
-	logoSprite.setScale(
-		windowSize.x / logoSprite.getLocalBounds().width,
-		windowSize.y / logoSprite.getLocalBounds().height
-	);
-	renderWindow.draw(logoSprite);
-	renderWindow.display();
+	RenderWindow& window = graphicsSystem->GetWindow();
+	graphicsSystem->ShowSplash();
 
 	//Set up events/conditions for the splash screen to transition into the app later
 	Event e;
@@ -88,7 +73,7 @@ void BlueJadeII::Splash(RenderWindow& renderWindow)
 
 void BlueJadeII::InitializeWindow()
 {
-	window.create(VideoMode(WindowWidth, WindowHeight), WindowTitle);
+	graphicsSystem = new GraphicsSystem();
 	gameState = ShowingSplash;
 }
 
@@ -222,6 +207,8 @@ void BlueJadeII::Render()
 	CircleShape shape(100.f);
 	shape.setFillColor(Color::Green);
 
+	RenderWindow& window = graphicsSystem->GetWindow();
+
 	window.clear();
 	window.draw(shape);
 	window.display();
@@ -229,6 +216,8 @@ void BlueJadeII::Render()
 
 void BlueJadeII::Update()
 {
+	RenderWindow& window = graphicsSystem->GetWindow();
+
 	while (gameState != Exiting)
 	{
 		Event event;
@@ -253,6 +242,5 @@ void BlueJadeII::Start()
 
 void BlueJadeII::CloseApp()
 {
-	window.clear();
-	window.close();
+	graphicsSystem->OnCloseApp();
 }

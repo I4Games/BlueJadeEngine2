@@ -155,6 +155,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Engine\System\BlueJadeII.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Graphics\GraphicsSystem.cpp" />
     <ClCompile Include="..\Source\Engine\System\Input\KeyboardHandler.h" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\BaseComponent.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\TransformComponent.cpp" />
@@ -164,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Engine\System\BlueJadeII.h" />
+    <ClInclude Include="..\Source\Engine\System\Graphics\GraphicsSystem.h" />
     <ClInclude Include="..\Source\Engine\System\Input\InputInterfaces.h" />
     <ClInclude Include="..\Source\Engine\System\Input\InputManager.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\BaseComponent.h" />

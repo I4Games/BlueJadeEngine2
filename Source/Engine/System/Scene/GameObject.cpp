@@ -18,7 +18,11 @@ GameObject::~GameObject(void) {
 	}
 }
 
-TransformComponent* GameObject::GetTransform() {
+Transform& GameObject::GetTransform() {
+	return transform->GetTransform();
+}
+
+TransformComponent* GameObject::GetTransformComponent() {
 	return transform;
 }
 
@@ -53,6 +57,16 @@ GameObject* GameObject::FindChildByName(std::string &name) {
 			if (search) {
 				return search;
 			}
+		}
+	}
+
+	return NULL;
+}
+
+BaseComponent* GameObject::GetComponent(ComponentType cType) {
+	for (std::vector<BaseComponent*>::iterator i = components.begin(); i != components.end(); ++i) {
+		if (cType == (*i)->GetComponentType()) {
+			return (*i);
 		}
 	}
 

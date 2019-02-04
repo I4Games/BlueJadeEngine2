@@ -1,5 +1,14 @@
 #include "GraphicsSystem.h"
 
+GraphicsSystem* GraphicsSystem::Instance = 0;
+
+GraphicsSystem* GraphicsSystem::GetInstance() {
+	if (!Instance) {
+		Instance = new GraphicsSystem();
+	}
+	return Instance;
+}
+
 GraphicsSystem::GraphicsSystem() {
 	window.create(sf::VideoMode(InitialWindowWidth, InitialWindowHeight), WindowTitle);
 }
@@ -27,4 +36,20 @@ void GraphicsSystem::ShowSplash() {
 void GraphicsSystem::OnCloseApp() {
 	window.clear();
 	window.close();
+}
+
+void GraphicsSystem::Render() {
+	window.clear();
+	for (std::vector<DrawSpec>::iterator i = drawables.begin(); i != drawables.end(); ++i) {
+		window.draw(*((*i).drawable), *((*i).transform));
+	}
+	window.display();
+	drawables.clear();
+}
+
+void GraphicsSystem::AddDrawable(sf::Drawable* d, sf::Transform* t) {
+	DrawSpec s;
+	s.drawable = d;
+	s.transform = t;
+	drawables.push_back(s);
 }

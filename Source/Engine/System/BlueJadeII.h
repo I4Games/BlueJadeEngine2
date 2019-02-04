@@ -40,7 +40,6 @@ protected:
 	/****
 	Members
 	****/
-	GraphicsSystem* graphicsSystem;
 	GameObjectManager* gameObjectManager;
 
 	Clock clock;

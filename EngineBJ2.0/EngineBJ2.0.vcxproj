@@ -157,7 +157,10 @@
     <ClCompile Include="..\Source\Engine\System\BlueJadeII.cpp" />
     <ClCompile Include="..\Source\Engine\System\Graphics\GraphicsSystem.cpp" />
     <ClCompile Include="..\Source\Engine\System\Input\KeyboardHandler.h" />
+    <ClCompile Include="..\Source\Engine\System\Physics\PhysicsSystem.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\BaseComponent.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\TransformComponent.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\GameObject.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\GameObjectManager.cpp" />
@@ -168,7 +171,10 @@
     <ClInclude Include="..\Source\Engine\System\Graphics\GraphicsSystem.h" />
     <ClInclude Include="..\Source\Engine\System\Input\InputInterfaces.h" />
     <ClInclude Include="..\Source\Engine\System\Input\InputManager.h" />
+    <ClInclude Include="..\Source\Engine\System\Physics\PhysicsSystem.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\BaseComponent.h" />
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.h" />
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\TransformComponent.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\GameObject.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\GameObjectManager.h" />

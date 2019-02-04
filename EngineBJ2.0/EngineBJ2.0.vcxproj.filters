@@ -34,6 +34,12 @@
     <Filter Include="Source Files\Scene\Component">
       <UniqueIdentifier>{5db88471-20e8-4da4-b333-10de8520b7a1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{f0beda4a-45d2-4647-b89e-3cf906315621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{9d244ad7-9958-4b44-be91-8ee1f21476ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Main.cpp">
@@ -60,6 +66,15 @@
     <ClCompile Include="..\Source\Engine\System\Graphics\GraphicsSystem.cpp">
       <Filter>Source Files\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Physics\PhysicsSystem.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.cpp">
+      <Filter>Source Files\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.cpp">
+      <Filter>Source Files\Scene\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Engine\System\BlueJadeII.h">
@@ -85,6 +100,15 @@
     </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Graphics\GraphicsSystem.h">
       <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Physics\PhysicsSystem.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.h">
+      <Filter>Header Files\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.h">
+      <Filter>Header Files\Scene\Component</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

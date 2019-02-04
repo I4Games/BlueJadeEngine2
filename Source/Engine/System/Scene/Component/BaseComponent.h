@@ -2,6 +2,7 @@
 #define BLUEJADE_BASECOMPONENT
 
 class GameObject;
+enum ComponentType;
 
 class BaseComponent {
 public:
@@ -9,6 +10,7 @@ public:
 	void SetGameObject(GameObject* gameObject);
 
 	virtual void Update(float msec) = 0;
+	virtual ComponentType GetComponentType() = 0;
 
 protected:
 	GameObject* gameObject;

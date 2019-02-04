@@ -50,8 +50,10 @@ void BlueJadeII::Splash()
 	Clock clock;
 	Time timeToClose = seconds(5.f);
 
-	RenderWindow& window = graphicsSystem->GetWindow();
-	graphicsSystem->ShowSplash();
+	GraphicsSystem* g = GraphicsSystem::GetInstance();
+
+	RenderWindow& window = g->GetWindow();
+	g->ShowSplash();
 
 	//Set up events/conditions for the splash screen to transition into the app later
 	Event e;
@@ -73,7 +75,6 @@ void BlueJadeII::Splash()
 
 void BlueJadeII::InitializeWindow()
 {
-	graphicsSystem = new GraphicsSystem();
 	gameState = ShowingSplash;
 }
 
@@ -205,18 +206,17 @@ int BlueJadeII::GetCPUSpeed() {
 void BlueJadeII::Render()
 {
 	CircleShape shape(100.f);
-	shape.setFillColor(Color::Green);
+	shape.setFillColor(Color::Blue);
+	Transform id = Transform::Identity;
+	id.scale(2.f, 2.f);
 
-	RenderWindow& window = graphicsSystem->GetWindow();
-
-	window.clear();
-	window.draw(shape);
-	window.display();
+	GraphicsSystem::GetInstance()->AddDrawable(&shape, &id);
+	GraphicsSystem::GetInstance()->Render();
 }
 
 void BlueJadeII::Update()
 {
-	RenderWindow& window = graphicsSystem->GetWindow();
+	RenderWindow& window = GraphicsSystem::GetInstance()->GetWindow();
 
 	while (gameState != Exiting)
 	{
@@ -242,5 +242,5 @@ void BlueJadeII::Start()
 
 void BlueJadeII::CloseApp()
 {
-	graphicsSystem->OnCloseApp();
+	GraphicsSystem::GetInstance()->OnCloseApp();
 }

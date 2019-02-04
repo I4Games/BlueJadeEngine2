@@ -26,7 +26,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
-[Gg]ame/
+[Gg]ame/*
 ![Gg]ame/*.dll
 [Tt]emp/
 

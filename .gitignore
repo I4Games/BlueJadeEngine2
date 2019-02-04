@@ -27,6 +27,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Gg]ame/
+![Gg]ame/*.dll
 [Tt]emp/
 
 # Visual Studio 2015/2017 cache/options directory

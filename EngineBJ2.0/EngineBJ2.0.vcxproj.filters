@@ -40,6 +40,12 @@
     <Filter Include="Header Files\Physics">
       <UniqueIdentifier>{9d244ad7-9958-4b44-be91-8ee1f21476ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Audio">
+      <UniqueIdentifier>{f35e189c-e3d2-4f52-addc-d22152f4c9c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio">
+      <UniqueIdentifier>{7104ea9a-801c-4add-b8b3-9dca21cd4aa7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Main.cpp">
@@ -75,6 +81,12 @@
     <ClCompile Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.cpp">
       <Filter>Source Files\Scene\Component</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Audio\AudioSystem.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\AudioPlayer.cpp">
+      <Filter>Source Files\Scene\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Engine\System\BlueJadeII.h">
@@ -108,6 +120,12 @@
       <Filter>Header Files\Scene\Component</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.h">
+      <Filter>Header Files\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Audio\AudioSystem.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\AudioPlayer.h">
       <Filter>Header Files\Scene\Component</Filter>
     </ClInclude>
   </ItemGroup>

@@ -12,7 +12,8 @@ class TransformComponent;
 enum ComponentType {
 	C_Transform,
 	C_SpriteRenderer,
-	C_PhysicsRBody
+	C_PhysicsRBody,
+	C_AudioPlayer
 };
 
 class GameObject {

@@ -12,3 +12,12 @@ GameObjectManager::~GameObjectManager() {
 GameObject* GameObjectManager::GetGameObjectByName(std::string &name) {
 	return rootScene->FindChildByName(name);
 }
+
+void GameObjectManager::AddGameObject(GameObject* gameObject, GameObject* parent) {
+	if (parent) {
+		parent->AddChild(gameObject);
+	}else {
+		rootScene->AddChild(gameObject);
+		gameObject->SetParent(NULL);
+	}
+}

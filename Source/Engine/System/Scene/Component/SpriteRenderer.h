@@ -12,5 +12,10 @@ public:
 
 	//BaseComponent
 	virtual void Update(float msec);
+	virtual void Init() {}
 	virtual ComponentType GetComponentType();
+
+private:
+	//Members
+	sf::Texture texture;
 };

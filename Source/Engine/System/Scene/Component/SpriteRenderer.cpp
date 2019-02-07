@@ -8,7 +8,6 @@ void SpriteRenderer::SetSpriteFromFile(std::string filename) {
 		return;
 	}
 
-	sf::Texture texture;
 	texture.loadFromImage(image);
 	sprite.setTexture(texture);
 }

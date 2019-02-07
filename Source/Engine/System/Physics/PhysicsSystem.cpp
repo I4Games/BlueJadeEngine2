@@ -12,6 +12,8 @@ PhysicsSystem* PhysicsSystem::GetInstance() {
 	return Instance;
 }
 
+const sf::Vector2f PhysicsSystem::DEFAULT_GRAVITY = sf::Vector2f(0.f, 90.f);
+
 void PhysicsSystem::AddRigidBody(PhysicsRBody* rigidBody) {
 	rigidBodies.push_back(rigidBody);
 }
@@ -55,20 +57,24 @@ void PhysicsSystem::CheckCollisions() {
 	for (int i = 0; i < rigidBodies.size() - 1; ++i) {
 		PhysicsRBody* bodyA = rigidBodies[i];
 		sf::Vector2f posA = bodyA->GetGameObject()->GetTransform().transformPoint(zero);
+		posA.y = -posA.y;
 
 		for (int j = i; j < rigidBodies.size(); ++j) {
 			PhysicsRBody* bodyB = rigidBodies[j];
 			sf::Vector2f posB = bodyB->GetGameObject()->GetTransform().transformPoint(zero);
+			posB.y = -posB.y;
+
 			if (bodyA != bodyB) {
 				std::pair<PhysicsRBody*, PhysicsRBody*> pair = std::make_pair(bodyA, bodyB);
 				CollisionInfo info;
 
-				sf::Vector2f distance = posB - posA;
-
 				sf::Vector2f halfSizeA = (bodyA->aabb.tRight - bodyA->aabb.bLeft) / 2.0f;
 				sf::Vector2f halfSizeB = (bodyB->aabb.tRight - bodyB->aabb.bLeft) / 2.0f;
 
+				sf::Vector2f distance = (posB + halfSizeB) - (posA + halfSizeA);
+
 				sf::Vector2f gap(std::abs(distance.x), std::abs(distance.y));
+				gap -= (halfSizeA + halfSizeB);
 
 				if (gap.x < 0 && gap.y < 0) {
 					if (collisions.count(pair)) {
@@ -86,10 +92,10 @@ void PhysicsSystem::CheckCollisions() {
 					}
 					else {
 						if (distance.y > 0) {
-							info.collisionNormal = Vector2f(0.0f, 1.0f);
+							info.collisionNormal = Vector2f(0.0f, -1.0f);
 						}
 						else {
-							info.collisionNormal = Vector2f(0.0f, -1.0f);
+							info.collisionNormal = Vector2f(0.0f, 1.0f);
 						}
 						info.penetration = gap.y;
 					}

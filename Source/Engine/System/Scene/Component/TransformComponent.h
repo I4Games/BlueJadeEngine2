@@ -14,6 +14,7 @@ public:
 
 	//Base Component
 	virtual void Update(float msec);
+	virtual void Init() {};
 	virtual ComponentType GetComponentType();
 
 protected:

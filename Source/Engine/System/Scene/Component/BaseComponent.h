@@ -10,6 +10,7 @@ public:
 	void SetGameObject(GameObject* gameObject);
 
 	virtual void Update(float msec) = 0;
+	virtual void Init() = 0;
 	virtual ComponentType GetComponentType() = 0;
 
 protected:

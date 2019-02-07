@@ -15,6 +15,7 @@ struct CollisionInfo {
 class PhysicsSystem {
 public:
 	static PhysicsSystem* GetInstance();
+	const static sf::Vector2f DEFAULT_GRAVITY;
 
 	void AddRigidBody(PhysicsRBody* rigidBody);
 	bool IsGrounded(PhysicsRBody* rigidBody);

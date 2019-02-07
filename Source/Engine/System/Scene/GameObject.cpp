@@ -46,6 +46,7 @@ void GameObject::AddChild(GameObject* s) {
 void GameObject::AddComponent(BaseComponent* c) {
 	components.push_back(c);
 	c->SetGameObject(this);
+	c->Init();
 }
 
 GameObject* GameObject::FindChildByName(std::string &name) {

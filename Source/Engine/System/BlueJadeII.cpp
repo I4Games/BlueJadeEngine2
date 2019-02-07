@@ -2,6 +2,13 @@
 
 #include "BlueJadeII.h"
 
+#include "Physics\PhysicsSystem.h"
+
+#include "Scene\Component\TransformComponent.h"
+#include "Scene\Component\PhysicsRBody.h"
+#include "Scene\Component\SpriteRenderer.h"
+#include "Scene\Component\AudioPlayer.h"
+
 BlueJadeII::BlueJadeII()
 {
 	gameState = Uninitialized;
@@ -45,10 +52,36 @@ void BlueJadeII::InitializeSystems() {
 	gameState = Playing;
 }
 
+GameObject* BlueJadeII::AddGameObject(string name) {
+	GameObject* obj = new GameObject(name);
+	gameObjectManager->AddGameObject(obj, NULL);
+
+	return obj;
+}
+
+BaseComponent* BlueJadeII::MakeComponent(ComponentType cType) {
+	switch (cType) {
+		case C_Transform:
+			return new TransformComponent();
+			break;
+		case C_PhysicsRBody:
+			return new PhysicsRBody();
+			break;
+		case C_SpriteRenderer:
+			return new SpriteRenderer();
+			break;
+		case C_AudioPlayer:
+			return new AudioPlayer();
+			break;
+	}
+
+	return NULL;
+}
+
 void BlueJadeII::Splash()
 {
 	Clock clock;
-	Time timeToClose = seconds(5.f);
+	Time timeToClose = seconds(2.f);
 
 	GraphicsSystem* g = GraphicsSystem::GetInstance();
 
@@ -205,12 +238,6 @@ int BlueJadeII::GetCPUSpeed() {
 
 void BlueJadeII::Render()
 {
-	CircleShape shape(100.f);
-	shape.setFillColor(Color::Blue);
-	Transform id = Transform::Identity;
-	id.scale(2.f, 2.f);
-
-	GraphicsSystem::GetInstance()->AddDrawable(&shape, &id);
 	GraphicsSystem::GetInstance()->Render();
 }
 
@@ -230,13 +257,17 @@ void BlueJadeII::Update()
 		}
 
 		Time elapsed = clock.restart();
-		gameObjectManager->Update(elapsed.asMilliseconds());
+
+		gameObjectManager->Update(elapsed.asSeconds());
+		PhysicsSystem::GetInstance()->Update(elapsed.asSeconds());
+
 		Render();
 	}
 }
 
 void BlueJadeII::Start() 
 {
+	clock.restart();
 	Update();
 }
 

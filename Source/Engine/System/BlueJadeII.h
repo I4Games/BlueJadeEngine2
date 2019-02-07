@@ -9,6 +9,7 @@
 #include <windows.h>
 #include <iostream>
 #include "Scene\GameObjectManager.h"
+#include "Scene\GameObject.h"
 #include "Graphics\GraphicsSystem.h"
 
 #define DEFAULT_STORAGE_NEEDED 314572800
@@ -36,6 +37,13 @@ public:
 	bool InitializeEngine();
 	void InitializeSystems();
 
+	//**
+	//GameObject
+	//**
+
+	GameObject* AddGameObject(string name);
+	BaseComponent* MakeComponent(ComponentType cType);
+
 protected:
 	/****
 	Members
@@ -51,6 +59,10 @@ protected:
 	/****
 	Methods
 	****/
+
+	//**
+	//Initialization
+	//**
 
 	//Check if there is another instance of the engine running
 	bool IsOnlyInstance();
@@ -70,11 +82,23 @@ protected:
 	//Create a new window
 	void InitializeWindow();
 
+	//**
+	//Graphics
+	//**
+
 	//Display the splash screen
 	void Splash();
 
 	//Called to draw stuff
 	void Render();
+
+	//**
+	//GameObject
+	//**
+
+	//**
+	//Lifecycle
+	//**
 
 	//Called every frame
 	void Update();

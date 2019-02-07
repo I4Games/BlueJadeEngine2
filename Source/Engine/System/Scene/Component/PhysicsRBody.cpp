@@ -6,9 +6,14 @@
 #include <cstdlib>
 
 PhysicsRBody::PhysicsRBody() {
+}
+
+void PhysicsRBody::Init() {
 	SetAABB();
 	engine = PhysicsSystem::GetInstance();
 	engine->AddRigidBody(this);
+	gravity.x = PhysicsSystem::DEFAULT_GRAVITY.x;
+	gravity.y = PhysicsSystem::DEFAULT_GRAVITY.y;
 }
 
 PhysicsRBody::~PhysicsRBody() {
@@ -48,11 +53,14 @@ void PhysicsRBody::Integrate(float dT) {
 		acceleration.y = 0.0f;
 	}
 	else {
-		acceleration = totalForces / mass;
+		acceleration += totalForces / mass;
 	}
 
 	currentVelocity += acceleration * dT;
 	gameObject->GetTransform().translate(currentVelocity * dT);
+	SetAABB();
+	totalForces.x = 0.f;
+	totalForces.y = 0.f;
 }
 
 ComponentType PhysicsRBody::GetComponentType() {
@@ -66,10 +74,10 @@ void PhysicsRBody::SetAABB() {
 		sf::FloatRect rect = gameObject->GetTransform().transformRect(sr->sprite.getGlobalBounds());
 
 		aabb.bLeft.x = rect.left;
-		aabb.bLeft.y = rect.top - rect.height;
+		aabb.bLeft.y = -rect.top - rect.height;
 
 		aabb.tRight.x = rect.left + rect.width;
-		aabb.tRight.y = rect.top;
+		aabb.tRight.y = -rect.top;
 
 		canCollide = true;
 	}else {

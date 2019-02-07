@@ -10,4 +10,9 @@ public:
 
 	void LoadSound(std::string filename);
 	void PlaySound();
+
+	//Base Component
+	virtual void Update(float msec) {}
+	virtual void Init() {}
+	virtual ComponentType GetComponentType();
 };

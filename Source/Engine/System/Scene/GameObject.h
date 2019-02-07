@@ -22,6 +22,7 @@ public:
 	~GameObject(void);
 
 	Transform& GetTransform();
+	Transform& GetWorldTransform();
 	TransformComponent* GetTransformComponent();
 	std::string GetName();
 	GameObject* GetParent();

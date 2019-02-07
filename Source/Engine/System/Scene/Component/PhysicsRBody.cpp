@@ -71,7 +71,7 @@ void PhysicsRBody::SetAABB() {
 	BaseComponent* r = gameObject->GetComponent(C_SpriteRenderer);
 	if (r) {
 		SpriteRenderer* sr = (SpriteRenderer*)r;
-		sf::FloatRect rect = gameObject->GetTransform().transformRect(sr->sprite.getGlobalBounds());
+		sf::FloatRect rect = gameObject->GetWorldTransform().transformRect(sr->sprite.getGlobalBounds());
 
 		aabb.bLeft.x = rect.left;
 		aabb.bLeft.y = -rect.top - rect.height;

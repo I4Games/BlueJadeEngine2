@@ -13,7 +13,7 @@ void SpriteRenderer::SetSpriteFromFile(std::string filename) {
 }
 
 void SpriteRenderer::Update(float msec) {
-	GraphicsSystem::GetInstance()->AddDrawable(&sprite, &(gameObject->GetTransform()));
+	GraphicsSystem::GetInstance()->AddDrawable(&sprite, &(gameObject->GetWorldTransform()));
 }
 
 ComponentType SpriteRenderer::GetComponentType() {

@@ -22,6 +22,10 @@ Transform& GameObject::GetTransform() {
 	return transform->GetTransform();
 }
 
+Transform& GameObject::GetWorldTransform() {
+	return transform->GetWorldTransform();
+}
+
 TransformComponent* GameObject::GetTransformComponent() {
 	return transform;
 }

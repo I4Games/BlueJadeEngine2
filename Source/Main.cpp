@@ -32,6 +32,18 @@ int main(){
 
 	ball->AddComponent(ballRBody);
 
+	//Ball Child
+
+	GameObject* ballChild = mGameApp->AddGameObject("BallChild");
+
+	SpriteRenderer* ballChildRenderer = (SpriteRenderer*)mGameApp->MakeComponent(C_SpriteRenderer);
+	ballChildRenderer->SetSpriteFromFile("../Assets/puzzlepack/png/ballGrey.png");
+
+	ballChild->AddComponent(ballChildRenderer);
+	ballChild->GetTransform().translate(40.f, 0.f).scale(0.5f, 0.5f);
+
+	ball->AddChild(ballChild);
+
 	//Platform
 
 	GameObject* platform = mGameApp->AddGameObject("Platform");

@@ -1,6 +1,7 @@
 #include "Engine/System/BlueJadeII.h"
 #include "Engine/System/Scene/Component/SpriteRenderer.h"
 #include "Engine/System/Scene/Component/PhysicsRBody.h"
+#include "Engine/System/Scene/Component/AudioPlayer.h"
 
 #include <windows.h>  
 #include <stdlib.h>  
@@ -26,11 +27,16 @@ int main(){
 
 	PhysicsRBody* ballRBody = (PhysicsRBody*)mGameApp->MakeComponent(C_PhysicsRBody);
 	ballRBody->bounciness = 0.6f;
+
+	AudioPlayer* ballPlayer = (AudioPlayer*)mGameApp->MakeComponent(C_AudioPlayer);
+	ballPlayer->playBGM("../Assets/sound/doctor.ogg");
 	
 	ball->AddComponent(ballRenderer);
 	ball->GetTransform().translate(250.f, 120.f).scale(2.0f,2.0f);
 
 	ball->AddComponent(ballRBody);
+
+	ball->AddComponent(ballPlayer);
 
 	//Ball Child
 

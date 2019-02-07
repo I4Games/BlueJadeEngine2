@@ -10,9 +10,6 @@ AudioSystem* AudioSystem::GetInstance() {
 }
 
 bool AudioSystem::OpenBGM(std::string filename) {
-	if (currentBGM.getStatus() == currentBGM.Playing) {
-		currentBGM.stop();
-	}
 	return currentBGM.openFromFile(filename);
 }
 

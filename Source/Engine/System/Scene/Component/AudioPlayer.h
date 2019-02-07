@@ -5,9 +5,12 @@
 
 class AudioPlayer : public BaseComponent {
 public:
+	sf::Music music;
 	sf::Sound sound;
 	sf::SoundBuffer buffer;
 
+	void playBGM(std::string filename);
+	void stopBGM();
 	void LoadSound(std::string filename);
 	void PlaySound();
 

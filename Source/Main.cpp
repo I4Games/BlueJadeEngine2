@@ -4,9 +4,12 @@
 #include <string.h>  
 #include <tchar.h>	
 
+
+
 BlueJadeII* mGameApp = nullptr;
 
 int main(){
+	
 	mGameApp = new BlueJadeII();
 
 	if (!mGameApp->InitializeEngine()) {

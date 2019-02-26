@@ -11,6 +11,8 @@
 #include <string.h>  
 #include <tchar.h>	
 
+
+
 BlueJadeII* mGameApp = nullptr;
 GameObject* ballChild;
 GameObject* ball;
@@ -54,6 +56,7 @@ void BigBallMoveDelegate(IEventData* p) {
 }
 
 int main(){
+	
 	mGameApp = new BlueJadeII();
 
 	if (!mGameApp->InitializeEngine()) {

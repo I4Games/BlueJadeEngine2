@@ -52,6 +52,9 @@
     <Filter Include="Header Files\Event\EventData">
       <UniqueIdentifier>{671ed7c2-3b46-47ba-8bd7-271fe143f005}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{81ccbe53-1a3a-4baf-b0cc-91db5686c127}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Main.cpp">
@@ -164,5 +167,10 @@
     <ClInclude Include="..\Source\Engine\System\Event\EventManager.h">
       <Filter>Header Files\Event</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\LuaFunc\test.lua">
+      <Filter>Scripts</Filter>
+    </None>
   </ItemGroup>
 </Project>

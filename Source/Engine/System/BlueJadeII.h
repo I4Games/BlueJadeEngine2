@@ -8,15 +8,25 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <iostream>
+
+extern "C" {
+#include "lua.h"
+#include "lualib.h" 
+#include "lauxlib.h"
+}
+
 #include "Scene\GameObjectManager.h"
 #include "Scene\GameObject.h"
 #include "Graphics\GraphicsSystem.h"
 #include "Event\EventData\IEventData.h"
 
+
+
 #define DEFAULT_STORAGE_NEEDED 314572800
 #define MAX_CONTIGUOUS_MEMORY_NEEDED 314572800
 #define MB_CONVERSION 1048576
 #define GB_CONVERSION 1073741824
+
 
 using namespace std;
 using namespace sf;
@@ -29,6 +39,8 @@ public:
 	int WindowHeight = 700;
 	string WindowTitle = "BlueJade-II";
 
+	lua_State *L;
+
 	BlueJadeII();
 
 	//Methods
@@ -37,6 +49,7 @@ public:
 	void CloseApp();
 	bool InitializeEngine();
 	void InitializeSystems();
+	void luaTest();
 
 	//**
 	//GameObject

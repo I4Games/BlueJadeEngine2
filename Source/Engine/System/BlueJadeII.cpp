@@ -279,8 +279,24 @@ void BlueJadeII::Update()
 	}
 }
 
+void BlueJadeII::luaTest()
+{
+	/* initialize Lua */
+	L = luaL_newstate();
+
+	/* load Lua base libraries */
+	luaL_openlibs(L);
+
+	/* run the script */
+	luaL_dofile(L, "../Source/LuaFunc/test.lua");
+
+	/* cleanup Lua */
+	lua_close(L);
+}
+
 void BlueJadeII::Start() 
 {
+	luaTest();
 	clock.restart();
 	Update();
 }

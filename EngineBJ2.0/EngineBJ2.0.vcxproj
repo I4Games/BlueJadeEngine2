@@ -156,6 +156,8 @@
   <ItemGroup>
     <ClCompile Include="..\Source\Engine\System\Audio\AudioSystem.cpp" />
     <ClCompile Include="..\Source\Engine\System\BlueJadeII.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Event\EventData\EvtData_Keydown.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Event\EventManager.cpp" />
     <ClCompile Include="..\Source\Engine\System\Graphics\GraphicsSystem.cpp" />
     <ClCompile Include="..\Source\Engine\System\Input\KeyboardHandler.h" />
     <ClCompile Include="..\Source\Engine\System\Physics\PhysicsSystem.cpp" />
@@ -171,6 +173,14 @@
   <ItemGroup>
     <ClInclude Include="..\Source\Engine\System\Audio\AudioSystem.h" />
     <ClInclude Include="..\Source\Engine\System\BlueJadeII.h" />
+    <ClInclude Include="..\Source\Engine\System\Event\EventData\BaseEventData.h" />
+    <ClInclude Include="..\Source\Engine\System\Event\EventData\EvtData_Keydown.h" />
+    <ClInclude Include="..\Source\Engine\System\Event\EventData\IEventData.h" />
+    <ClInclude Include="..\Source\Engine\System\Event\EventManager.h" />
+    <ClInclude Include="..\Source\Engine\System\Event\EventTypes.h" />
+    <ClInclude Include="..\Source\Engine\System\Event\FastDelegate.h" />
+    <ClInclude Include="..\Source\Engine\System\Event\FastDelegateBind.h" />
+    <ClInclude Include="..\Source\Engine\System\Event\IEventManager.h" />
     <ClInclude Include="..\Source\Engine\System\Graphics\GraphicsSystem.h" />
     <ClInclude Include="..\Source\Engine\System\Input\InputInterfaces.h" />
     <ClInclude Include="..\Source\Engine\System\Input\InputManager.h" />

@@ -1,14 +1,16 @@
 #include "InputInterfaces.h"
 #include <string>
+#include <iostream>
+#include "../Event/EventData/EvtData_Keydown.h"
+#include "../Event/EventManager.h"
 
 
 class KeyboardHandler:public IKeyboardHandler 
 {
 	bool VOnKeyDown(unsigned int const kcode)
 	{
-		std::string temp;
-		temp = std::to_string(kcode);
-		OutputDebugStringA(temp.c_str());
+		EvtData_Keydown* pEvent = new EvtData_Keydown(kcode);
+		EventManager::GetInstance()->VQueueEvent(pEvent);
 		return true;
 	}
 

@@ -46,6 +46,12 @@
     <Filter Include="Source Files\Audio">
       <UniqueIdentifier>{7104ea9a-801c-4add-b8b3-9dca21cd4aa7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Event">
+      <UniqueIdentifier>{cb0e4042-cc62-4120-a9dc-138904302c93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Event\EventData">
+      <UniqueIdentifier>{671ed7c2-3b46-47ba-8bd7-271fe143f005}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Main.cpp">
@@ -87,6 +93,12 @@
     <ClCompile Include="..\Source\Engine\System\Scene\Component\AudioPlayer.cpp">
       <Filter>Source Files\Scene\Component</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Event\EventData\EvtData_Keydown.cpp">
+      <Filter>Header Files\Event\EventData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Event\EventManager.cpp">
+      <Filter>Header Files\Event</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Engine\System\BlueJadeII.h">
@@ -127,6 +139,30 @@
     </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Scene\Component\AudioPlayer.h">
       <Filter>Header Files\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Event\EventTypes.h">
+      <Filter>Header Files\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Event\EventData\BaseEventData.h">
+      <Filter>Header Files\Event\EventData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Event\EventData\IEventData.h">
+      <Filter>Header Files\Event\EventData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Event\EventData\EvtData_Keydown.h">
+      <Filter>Header Files\Event\EventData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Event\IEventManager.h">
+      <Filter>Header Files\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Event\FastDelegate.h">
+      <Filter>Header Files\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Event\FastDelegateBind.h">
+      <Filter>Header Files\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Event\EventManager.h">
+      <Filter>Header Files\Event</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

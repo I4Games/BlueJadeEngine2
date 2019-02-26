@@ -2,6 +2,9 @@
 #include "Engine/System/Scene/Component/SpriteRenderer.h"
 #include "Engine/System/Scene/Component/PhysicsRBody.h"
 #include "Engine/System/Scene/Component/AudioPlayer.h"
+#include "Engine/System/Event/EventData/EvtData_Keydown.h"
+
+#include <SFML/Graphics.hpp>
 
 #include <windows.h>  
 #include <stdlib.h>  
@@ -9,6 +12,46 @@
 #include <tchar.h>	
 
 BlueJadeII* mGameApp = nullptr;
+GameObject* ballChild;
+GameObject* ball;
+
+void BallMoveDelegate(IEventData* p) {
+	float mov = 2.f;
+	EvtData_Keydown* pEvent = (EvtData_Keydown*)p;
+	switch (pEvent->GetKeyCode()) {
+		case sf::Keyboard::Left:
+			ballChild->GetTransform().translate(-mov, 0.f);
+			break;
+		case sf::Keyboard::Right:
+			ballChild->GetTransform().translate(mov, 0.f);
+			break;
+		case sf::Keyboard::Up:
+			ballChild->GetTransform().translate(0.f, -mov);
+			break;
+		case sf::Keyboard::Down:
+			ballChild->GetTransform().translate(0.f, mov);
+			break;
+	}
+}
+
+void BigBallMoveDelegate(IEventData* p) {
+	float mov = 2.f;
+	EvtData_Keydown* pEvent = (EvtData_Keydown*)p;
+	switch (pEvent->GetKeyCode()) {
+	case sf::Keyboard::A:
+		ball->GetTransform().translate(-mov, 0.f);
+		break;
+	case sf::Keyboard::D:
+		ball->GetTransform().translate(mov, 0.f);
+		break;
+	case sf::Keyboard::W:
+		ball->GetTransform().translate(0.f, -mov);
+		break;
+	case sf::Keyboard::S:
+		ball->GetTransform().translate(0.f, mov);
+		break;
+	}
+}
 
 int main(){
 	mGameApp = new BlueJadeII();
@@ -20,7 +63,7 @@ int main(){
 
 	//Ball
 	
-	GameObject* ball = mGameApp->AddGameObject("Ball");
+	ball = mGameApp->AddGameObject("Ball");
 	
 	SpriteRenderer* ballRenderer = (SpriteRenderer*) mGameApp->MakeComponent(C_SpriteRenderer);
 	ballRenderer->SetSpriteFromFile("../Assets/puzzlepack/png/ballBlue.png");
@@ -40,13 +83,13 @@ int main(){
 
 	//Ball Child
 
-	GameObject* ballChild = mGameApp->AddGameObject("BallChild");
+	ballChild = mGameApp->AddGameObject("BallChild");
 
 	SpriteRenderer* ballChildRenderer = (SpriteRenderer*)mGameApp->MakeComponent(C_SpriteRenderer);
 	ballChildRenderer->SetSpriteFromFile("../Assets/puzzlepack/png/ballGrey.png");
 
 	ballChild->AddComponent(ballChildRenderer);
-	ballChild->GetTransform().translate(40.f, 0.f).scale(0.5f, 0.5f);
+	ballChild->GetTransform().translate(180.f, 0.f).scale(0.5f, 0.5f);
 
 	ball->AddChild(ballChild);
 
@@ -65,6 +108,10 @@ int main(){
 	platform->GetTransform().translate(250.0f, 300.f);
 
 	platform->AddComponent(platformRBody);
+
+	EvtData_Keydown* pt = new EvtData_Keydown(2);
+	mGameApp->AddEventListener(pt->VGetEventType(), &BallMoveDelegate);
+	mGameApp->AddEventListener(pt->VGetEventType(), &BigBallMoveDelegate);
 	
 	mGameApp->Start();
 

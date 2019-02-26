@@ -9,6 +9,10 @@
 #include "Scene\Component\SpriteRenderer.h"
 #include "Scene\Component\AudioPlayer.h"
 
+#include "Event\EventManager.h"
+
+#include "Input\InputManager.h"
+
 BlueJadeII::BlueJadeII()
 {
 	gameState = Uninitialized;
@@ -76,6 +80,10 @@ BaseComponent* BlueJadeII::MakeComponent(ComponentType cType) {
 	}
 
 	return NULL;
+}
+
+void BlueJadeII::AddEventListener(const EventType& t, void(*foo)(IEventData*)) {
+	EventManager::GetInstance()->VAddListener(EventListenerDelegate(foo), t);
 }
 
 void BlueJadeII::Splash()
@@ -250,14 +258,20 @@ void BlueJadeII::Update()
 		Event event;
 		while (window.pollEvent(event))
 		{
-			if (event.type == Event::Closed) {
-				window.close();
-				gameState = Exiting;
+			switch (event.type) {
+				case Event::Closed:
+					window.close();
+					gameState = Exiting;
+					break;
+				case Event::KeyPressed:
+					InputManager::GetInstance()->KeyDown(event.key.code);
+					break;
 			}
 		}
 
 		Time elapsed = clock.restart();
 
+		EventManager::GetInstance()->VUpdate();
 		gameObjectManager->Update(elapsed.asSeconds());
 		PhysicsSystem::GetInstance()->Update(elapsed.asSeconds());
 

@@ -11,6 +11,7 @@
 #include "Scene\GameObjectManager.h"
 #include "Scene\GameObject.h"
 #include "Graphics\GraphicsSystem.h"
+#include "Event\EventData\IEventData.h"
 
 #define DEFAULT_STORAGE_NEEDED 314572800
 #define MAX_CONTIGUOUS_MEMORY_NEEDED 314572800
@@ -43,6 +44,12 @@ public:
 
 	GameObject* AddGameObject(string name);
 	BaseComponent* MakeComponent(ComponentType cType);
+
+	//**
+	//Event
+	//**
+
+	void AddEventListener(const EventType& t, void(*foo)(IEventData*));
 
 protected:
 	/****

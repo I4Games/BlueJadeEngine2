@@ -46,6 +46,9 @@
     <Filter Include="Source Files\Audio">
       <UniqueIdentifier>{7104ea9a-801c-4add-b8b3-9dca21cd4aa7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lua Scripts">
+      <UniqueIdentifier>{bf6cfaaa-9c42-4945-91f7-eabb31ea0a72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Main.cpp">
@@ -128,5 +131,10 @@
     <ClInclude Include="..\Source\Engine\System\Scene\Component\AudioPlayer.h">
       <Filter>Header Files\Scene\Component</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test.lua">
+      <Filter>Lua Scripts</Filter>
+    </None>
   </ItemGroup>
 </Project>

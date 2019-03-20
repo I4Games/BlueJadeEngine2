@@ -3,6 +3,8 @@
 #include "../Scene/GameObject.h"
 #include <cstdlib>
 
+#include "../Graphics/GraphicsSystem.h"
+
 PhysicsSystem* PhysicsSystem::Instance = 0;
 
 PhysicsSystem* PhysicsSystem::GetInstance() {
@@ -57,12 +59,10 @@ void PhysicsSystem::CheckCollisions() {
 	for (int i = 0; i < rigidBodies.size() - 1; ++i) {
 		PhysicsRBody* bodyA = rigidBodies[i];
 		sf::Vector2f posA = bodyA->GetGameObject()->GetTransform().transformPoint(zero);
-		posA.y = -posA.y;
 
 		for (int j = i; j < rigidBodies.size(); ++j) {
 			PhysicsRBody* bodyB = rigidBodies[j];
 			sf::Vector2f posB = bodyB->GetGameObject()->GetTransform().transformPoint(zero);
-			posB.y = -posB.y;
 
 			if (bodyA != bodyB) {
 				std::pair<PhysicsRBody*, PhysicsRBody*> pair = std::make_pair(bodyA, bodyB);
@@ -92,10 +92,10 @@ void PhysicsSystem::CheckCollisions() {
 					}
 					else {
 						if (distance.y > 0) {
-							info.collisionNormal = Vector2f(0.0f, -1.0f);
+							info.collisionNormal = Vector2f(0.0f, 1.0f);
 						}
 						else {
-							info.collisionNormal = Vector2f(0.0f, 1.0f);
+							info.collisionNormal = Vector2f(0.0f, -1.0f);
 						}
 						info.penetration = gap.y;
 					}
@@ -164,6 +164,6 @@ void PhysicsSystem::PositionalCorrection(std::pair<PhysicsRBody*,PhysicsRBody*> 
 
 	sf::Vector2f correction = ((collisions[c].penetration / (invMassA + invMassB)) * percent) * -collisions[c].collisionNormal;
 
-	c.first->GetGameObject()->GetTransform().translate(-(invMassA * correction));
-	c.second->GetGameObject()->GetTransform().translate(invMassB * correction);
+	c.first->GetGameObject()->Translate(-(invMassA * correction));
+	c.second->GetGameObject()->Translate(invMassB * correction);
 }

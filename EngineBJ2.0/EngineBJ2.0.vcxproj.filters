@@ -55,6 +55,9 @@
     <Filter Include="Scripts">
       <UniqueIdentifier>{81ccbe53-1a3a-4baf-b0cc-91db5686c127}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{ef170046-f9d6-4685-9f7a-0f707d3fa785}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Main.cpp">
@@ -101,6 +104,9 @@
     </ClCompile>
     <ClCompile Include="..\Source\Engine\System\Event\EventManager.cpp">
       <Filter>Header Files\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\SceneManager.cpp">
+      <Filter>Source Files\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -167,10 +173,18 @@
     <ClInclude Include="..\Source\Engine\System\Event\EventManager.h">
       <Filter>Header Files\Event</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Scene\SceneManager.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\LuaFunc\test.lua">
       <Filter>Scripts</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Assets\Scenes\SampleScene.xml">
+      <Filter>Scenes</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

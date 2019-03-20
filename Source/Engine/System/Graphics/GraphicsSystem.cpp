@@ -15,7 +15,7 @@ GraphicsSystem::GraphicsSystem() {
 
 void GraphicsSystem::ShowSplash() {
 	sf::Image BJ2Logo;
-	if (!BJ2Logo.loadFromFile("../Assets/BJ2Logo.png"))
+	if (!BJ2Logo.loadFromFile("../Assets/Sprites/BJ2Logo.png"))
 		return;
 
 	sf::Texture logoTexture;
@@ -43,8 +43,13 @@ void GraphicsSystem::Render() {
 	for (std::vector<DrawSpec>::iterator i = drawables.begin(); i != drawables.end(); ++i) {
 		window.draw(*((*i).drawable), *((*i).transform));
 	}
+	for (auto i = shapes.begin(); i != shapes.end(); ++i) {
+		window.draw(*(*i));
+		delete (*i);
+	}
 	window.display();
 	drawables.clear();
+	shapes.clear();
 }
 
 void GraphicsSystem::AddDrawable(sf::Drawable* d, sf::Transform* t) {
@@ -52,4 +57,8 @@ void GraphicsSystem::AddDrawable(sf::Drawable* d, sf::Transform* t) {
 	s.drawable = d;
 	s.transform = t;
 	drawables.push_back(s);
+}
+
+void GraphicsSystem::AddShape(sf::Shape* shape) {
+	shapes.push_back(shape);
 }

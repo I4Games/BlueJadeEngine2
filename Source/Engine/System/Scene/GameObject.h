@@ -23,13 +23,18 @@ public:
 
 	Transform& GetTransform();
 	Transform& GetWorldTransform();
-	TransformComponent* GetTransformComponent();
+	TransformComponent* Transform();
 	std::string GetName();
 	GameObject* GetParent();
+	std::vector<GameObject*> GetChildren() { return children; }
 	
 	void SetParent(GameObject* p);
 	void AddChild(GameObject* s);
 	void AddComponent(BaseComponent* c);
+
+	void Translate(sf::Vector2f t);
+	void Rotate(float r);
+	void Scale(sf::Vector2f s);
 
 	GameObject* FindChildByName(std::string &name);
 

@@ -25,6 +25,7 @@ public:
 	void Render();
 
 	void AddDrawable(sf::Drawable* d, sf::Transform* t);
+	void AddShape(sf::Shape* shape);
 
 private:
 	static GraphicsSystem* Instance;
@@ -32,4 +33,5 @@ private:
 	//Members
 	sf::RenderWindow window;
 	std::vector<DrawSpec> drawables;
+	std::vector<sf::Shape*> shapes;
 };

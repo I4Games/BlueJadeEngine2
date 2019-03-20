@@ -8,9 +8,14 @@ using namespace sf;
 
 class TransformComponent : public BaseComponent {
 public:
+	TransformComponent();
+
 	void SetTransform(Transform &matrix);
 	Transform& GetTransform();
 	Transform& GetWorldTransform();
+	void Translate(sf::Vector2f t);
+	void Rotate(float r);
+	void Scale(sf::Vector2f s);
 
 	//Base Component
 	virtual void Update(float msec);
@@ -20,6 +25,9 @@ public:
 protected:
 	Transform transform;
 	Transform worldTransform;
+	Vector2f translation;
+	float rotation;
+	Vector2f scale;
 };
 
 #endif

@@ -26,7 +26,7 @@ Transform& GameObject::GetWorldTransform() {
 	return transform->GetWorldTransform();
 }
 
-TransformComponent* GameObject::GetTransformComponent() {
+TransformComponent* GameObject::Transform() {
 	return transform;
 }
 
@@ -51,6 +51,18 @@ void GameObject::AddComponent(BaseComponent* c) {
 	components.push_back(c);
 	c->SetGameObject(this);
 	c->Init();
+}
+
+void GameObject::Translate(sf::Vector2f t) {
+	transform->Translate(t);
+}
+
+void GameObject::Rotate(float r) {
+	transform->Rotate(r);
+}
+
+void GameObject::Scale(sf::Vector2f s) {
+	transform->Scale(s);
 }
 
 GameObject* GameObject::FindChildByName(std::string &name) {

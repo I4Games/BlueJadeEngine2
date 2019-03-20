@@ -5,6 +5,8 @@
 #include "../Component/SpriteRenderer.h"
 #include <cstdlib>
 
+#include "../../Graphics/GraphicsSystem.h"
+
 PhysicsRBody::PhysicsRBody() {
 }
 
@@ -57,7 +59,8 @@ void PhysicsRBody::Integrate(float dT) {
 	}
 
 	currentVelocity += acceleration * dT;
-	gameObject->GetTransform().translate(currentVelocity * dT);
+	
+	gameObject->Translate(currentVelocity * dT);
 	SetAABB();
 	totalForces.x = 0.f;
 	totalForces.y = 0.f;
@@ -71,7 +74,9 @@ void PhysicsRBody::SetAABB() {
 	BaseComponent* r = gameObject->GetComponent(C_SpriteRenderer);
 	if (r) {
 		SpriteRenderer* sr = (SpriteRenderer*)r;
-		sf::FloatRect rect = gameObject->GetWorldTransform().transformRect(sr->sprite.getGlobalBounds());
+		sf::FloatRect spriteRect = sr->sprite.getGlobalBounds();
+		sf::Transform worldTransform = gameObject->GetWorldTransform();
+		sf::FloatRect rect = worldTransform.transformRect(sr->sprite.getGlobalBounds());
 
 		aabb.bLeft.x = rect.left;
 		aabb.bLeft.y = -rect.top - rect.height;

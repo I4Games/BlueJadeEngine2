@@ -1,5 +1,14 @@
 #include "GameObjectManager.h"
 
+GameObjectManager* GameObjectManager::Instance = 0;
+
+GameObjectManager* GameObjectManager::GetInstance() {
+	if (!Instance) {
+		Instance = new GameObjectManager();
+	}
+	return Instance;
+}
+
 GameObjectManager::GameObjectManager() {
 	std::string name = "";
 	rootScene = new GameObject(name);
@@ -9,12 +18,27 @@ GameObjectManager::~GameObjectManager() {
 	delete rootScene;
 }
 
+void GameObjectManager::SetRootGameObject(GameObject* newRoot) {
+	GameObject* oldRoot = GameObjectManager::GetInstance()->rootScene;
+	GameObjectManager::GetInstance()->rootScene = newRoot;
+
+	if(oldRoot) delete oldRoot;
+}
+
+void GameObjectManager::EmptyRoot() {
+	std::vector<GameObject*> root = GameObjectManager::GetInstance()->rootScene->GetChildren();
+	for (auto it = root.begin(); it != root.end(); ++it) {
+		delete (*it);
+	}
+	root.clear();
+}
+
 GameObject* GameObjectManager::GetGameObjectByName(std::string &name) {
 	return rootScene->FindChildByName(name);
 }
 
 void GameObjectManager::AddGameObject(GameObject* gameObject, GameObject* parent) {
-	if (parent) {
+	if (parent && parent != rootScene) {
 		parent->AddChild(gameObject);
 	}else {
 		rootScene->AddChild(gameObject);

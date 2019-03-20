@@ -57,6 +57,7 @@ public:
 
 	GameObject* AddGameObject(string name);
 	BaseComponent* MakeComponent(ComponentType cType);
+	GameObject* FindGameObject(string name);
 
 	//**
 	//Event
@@ -64,12 +65,16 @@ public:
 
 	void AddEventListener(const EventType& t, void(*foo)(IEventData*));
 
+	//**
+	//Scene
+	//**
+
+	void OpenScene(std::string filename);
+
 protected:
 	/****
 	Members
 	****/
-	GameObjectManager* gameObjectManager;
-
 	Clock clock;
 	HANDLE m_MutexHandle;
 

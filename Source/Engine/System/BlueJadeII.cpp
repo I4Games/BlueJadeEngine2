@@ -4,10 +4,8 @@
 
 #include "Physics\PhysicsSystem.h"
 
-#include "Scene\Component\TransformComponent.h"
-#include "Scene\Component\PhysicsRBody.h"
-#include "Scene\Component\SpriteRenderer.h"
-#include "Scene\Component\AudioPlayer.h"
+#include "Scene\Component\BaseComponent.h"
+#include "Scene\SceneManager.h"
 
 #include "Event\EventManager.h"
 
@@ -52,38 +50,30 @@ bool BlueJadeII::InitializeEngine()
 }
 
 void BlueJadeII::InitializeSystems() {
-	gameObjectManager = new GameObjectManager();
 	gameState = Playing;
 }
 
 GameObject* BlueJadeII::AddGameObject(string name) {
 	GameObject* obj = new GameObject(name);
-	gameObjectManager->AddGameObject(obj, NULL);
+	GameObjectManager::GetInstance()->AddGameObject(obj, NULL);
 
 	return obj;
 }
 
 BaseComponent* BlueJadeII::MakeComponent(ComponentType cType) {
-	switch (cType) {
-		case C_Transform:
-			return new TransformComponent();
-			break;
-		case C_PhysicsRBody:
-			return new PhysicsRBody();
-			break;
-		case C_SpriteRenderer:
-			return new SpriteRenderer();
-			break;
-		case C_AudioPlayer:
-			return new AudioPlayer();
-			break;
-	}
+	return SceneManager::MakeComponent(cType);
+}
 
-	return NULL;
+GameObject* BlueJadeII::FindGameObject(string name) {
+	return GameObjectManager::GetInstance()->GetGameObjectByName(name);
 }
 
 void BlueJadeII::AddEventListener(const EventType& t, void(*foo)(IEventData*)) {
 	EventManager::GetInstance()->VAddListener(EventListenerDelegate(foo), t);
+}
+
+void BlueJadeII::OpenScene(std::string filename) {
+	SceneManager::GetInstance()->BuildScene(filename);
 }
 
 void BlueJadeII::Splash()
@@ -272,7 +262,7 @@ void BlueJadeII::Update()
 		Time elapsed = clock.restart();
 
 		EventManager::GetInstance()->VUpdate();
-		gameObjectManager->Update(elapsed.asSeconds());
+		GameObjectManager::GetInstance()->Update(elapsed.asSeconds());
 		PhysicsSystem::GetInstance()->Update(elapsed.asSeconds());
 
 		Render();

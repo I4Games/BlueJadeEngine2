@@ -11,6 +11,7 @@ public:
 
 	virtual void Update(float msec) = 0;
 	virtual void Init() = 0;
+	virtual void OnCollisionDetected(GameObject* other) {}
 	virtual ComponentType GetComponentType() = 0;
 
 protected:

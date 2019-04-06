@@ -5,7 +5,10 @@
 class IKeyboardHandler {
 public:
 	virtual bool VOnKeyDown(unsigned int const kcode) = 0;
+	virtual bool VIsKeyDown(unsigned int const kcode) = 0;
 	virtual bool VOnKeyUp(unsigned int const kcode) = 0;
+	virtual bool VIsKeyPressed(unsigned int const kcode) = 0;
+	virtual void VUpdate() = 0;
 };
 
 class IPointerHandler {

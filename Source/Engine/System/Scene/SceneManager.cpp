@@ -1,6 +1,12 @@
 #include "SceneManager.h"
 #include "GameObjectManager.h"
 
+#include "Component\TransformComponent.h"
+#include "Component\PhysicsRBody.h"
+#include "Component\SpriteRenderer.h"
+#include "Component\AudioPlayer.h"
+#include "Component\Paddle.h"
+
 SceneManager* SceneManager::Instance = 0;
 std::string SceneManager::assetRoot = "../Assets/";
 
@@ -24,6 +30,9 @@ BaseComponent* SceneManager::MakeComponent(ComponentType cType) {
 		break;
 	case C_AudioPlayer:
 		return new AudioPlayer();
+		break;
+	case C_Paddle:
+		return new Paddle();
 		break;
 	}
 
@@ -103,5 +112,11 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 		AudioPlayer* ap = new AudioPlayer();
 
 		obj->AddComponent(ap);
+	}
+	else if (eStr == "Paddle") {
+		Paddle* pad = new Paddle();
+		pad->speed = elem->FloatAttribute("speed");
+
+		obj->AddComponent(pad);
 	}
 }

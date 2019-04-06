@@ -159,11 +159,14 @@
     <ClCompile Include="..\Source\Engine\System\Event\EventData\EvtData_Keydown.cpp" />
     <ClCompile Include="..\Source\Engine\System\Event\EventManager.cpp" />
     <ClCompile Include="..\Source\Engine\System\Graphics\GraphicsSystem.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Input\InputManager.cpp" />
     <ClCompile Include="..\Source\Engine\System\Input\KeyboardHandler.h" />
     <ClCompile Include="..\Source\Engine\System\Physics\PhysicsSystem.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\AudioPlayer.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\BaseComponent.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\Paddle.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\Script.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\TransformComponent.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\GameObject.cpp" />
@@ -188,7 +191,9 @@
     <ClInclude Include="..\Source\Engine\System\Physics\PhysicsSystem.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\AudioPlayer.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\BaseComponent.h" />
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\Paddle.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.h" />
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\Script.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\TransformComponent.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\GameObject.h" />

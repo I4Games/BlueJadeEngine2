@@ -34,6 +34,10 @@ std::string GameObject::GetName() {
 	return name;
 }
 
+std::string GameObject::GetTag() {
+	return tag;
+}
+
 GameObject* GameObject::GetParent() {
 	return parent;
 }
@@ -51,6 +55,10 @@ void GameObject::AddComponent(BaseComponent* c) {
 	components.push_back(c);
 	c->SetGameObject(this);
 	c->Init();
+}
+
+void GameObject::SetTag(std::string newTag) {
+	tag = newTag;
 }
 
 void GameObject::Translate(sf::Vector2f t) {
@@ -97,5 +105,11 @@ void GameObject::Update(float msec) {
 
 	for (std::vector<GameObject*>::iterator i = children.begin(); i != children.end(); ++i) {
 		(*i)->Update(msec);
+	}
+}
+
+void GameObject::OnCollisionDetected(GameObject* other) {
+	for (auto i = components.begin(); i != components.end(); ++i) {
+		(*i)->OnCollisionDetected(other);
 	}
 }

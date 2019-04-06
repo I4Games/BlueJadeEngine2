@@ -5,25 +5,20 @@
 class InputManager {
 	static InputManager* m_instance;
 public:
+	static InputManager* GetInstance();
+
 	IKeyboardHandler* m_keyboardHandler;
 	IPointerHandler* m_pointerHandler;
 	//IJoystickHandler* m_joystickHandler;
 	//IGamepadHandler* m_gamepadHandler;
 
-	InputManager(){
-		m_keyboardHandler = new KeyboardHandler();
-	};
+	InputManager();
 
-	void KeyDown(unsigned const int kcode) {
-		m_keyboardHandler->VOnKeyDown(kcode);
-	}
+	void KeyDown(unsigned const int kcode);
+	void KeyUp(unsigned const int kcode);
 
-	static InputManager* GetInstance() {
-		if (!m_instance) {
-			m_instance = new InputManager();
-		}
-		return m_instance;
-	}
+	bool IsKeyDown(unsigned const int kcode);
+	bool IsKeyPressed(unsigned const int kcode);
+
+	void Update();
 };
-
-InputManager* InputManager::m_instance = 0;

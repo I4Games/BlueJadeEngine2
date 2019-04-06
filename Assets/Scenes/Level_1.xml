@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Level>
+  <GameObject name="Paddle">
+    <Components>
+      <Transform>
+        <Position x="250" y="300" />
+        <Rotation y="0" />
+        <Scale x="1" y="1" />
+      </Transform>
+      <SpriteRenderer>
+        <Sprite filename="Sprites/puzzlepack/png/buttonDefault.png" />
+      </SpriteRenderer>
+      <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+	  <Paddle speed="100.0" />
+    </Components>
+  </GameObject>
+</Level>

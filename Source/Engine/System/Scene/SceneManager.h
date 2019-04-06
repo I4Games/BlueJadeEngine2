@@ -4,11 +4,6 @@
 #include <stack>
 #include "tinyxml2.h"
 
-#include "Component\TransformComponent.h"
-#include "Component\PhysicsRBody.h"
-#include "Component\SpriteRenderer.h"
-#include "Component\AudioPlayer.h"
-
 class SceneManager {
 public:
 	static SceneManager* GetInstance();

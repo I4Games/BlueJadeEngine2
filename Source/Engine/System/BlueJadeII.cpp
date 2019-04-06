@@ -256,6 +256,9 @@ void BlueJadeII::Update()
 				case Event::KeyPressed:
 					InputManager::GetInstance()->KeyDown(event.key.code);
 					break;
+				case Event::KeyReleased:
+					InputManager::GetInstance()->KeyUp(event.key.code);
+					break;
 			}
 		}
 
@@ -263,6 +266,7 @@ void BlueJadeII::Update()
 
 		EventManager::GetInstance()->VUpdate();
 		GameObjectManager::GetInstance()->Update(elapsed.asSeconds());
+		InputManager::GetInstance()->Update();
 		PhysicsSystem::GetInstance()->Update(elapsed.asSeconds());
 
 		Render();

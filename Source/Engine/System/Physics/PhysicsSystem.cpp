@@ -142,6 +142,10 @@ void PhysicsSystem::ResolveCollisions(float dT) {
 		if (std::abs(collisions[p].penetration) > 0.01f) {
 			PositionalCorrection(p);
 		}
+
+		//Call collision event
+		p.first->GetGameObject()->OnCollisionDetected(p.second->GetGameObject());
+		p.second->GetGameObject()->OnCollisionDetected(p.first->GetGameObject());
 	}
 }
 

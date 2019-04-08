@@ -16,7 +16,8 @@ enum ComponentType {
 	C_AudioPlayer,
 	C_Script,
 	C_Paddle,
-	C_Brick
+	C_Brick,
+	C_Ball
 };
 
 class GameObject {

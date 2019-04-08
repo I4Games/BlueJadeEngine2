@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <Level>
+    
   <GameObject name="Paddle">
     <Components>
       <Transform>
@@ -11,7 +12,7 @@
         <Sprite filename="Sprites/puzzlepack/png/paddleBlu.png" />
       </SpriteRenderer>
       <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
-	  <Paddle speed="100.0" />
+	  <Paddle speed="25.0" />
     </Components>
   </GameObject>
   
@@ -827,5 +828,19 @@
      </Components>
  </GameObject>
  
+ <GameObject name="Ball">
+     <Components>
+         <Transform>
+             <Position x="490" y="628" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/ballBlue.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="1" bounciness="1" obeysGravity="0.98" canCollide="1" />
+         <Ball speed="30" />
+     </Components>
+ </GameObject>
  
 </Level>

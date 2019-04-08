@@ -7,6 +7,7 @@
 #include "Component\AudioPlayer.h"
 #include "Component\Paddle.h"
 #include "Component\Brick.h"
+#include "Component\Ball.h"
 
 SceneManager* SceneManager::Instance = 0;
 std::string SceneManager::assetRoot = "../Assets/";
@@ -38,8 +39,10 @@ BaseComponent* SceneManager::MakeComponent(ComponentType cType) {
 	case C_Brick:
 		return new Brick();
 		break;
+	case C_Ball:
+		return new Ball();
+		break;
 	}
-
 	return NULL;
 }
 
@@ -122,5 +125,15 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 		pad->speed = elem->FloatAttribute("speed");
 
 		obj->AddComponent(pad);
+	}
+	else if (eStr == "Brick") {
+		Brick* brk = new Brick();
+		obj->AddComponent(brk);
+	}
+	else if (eStr == "Ball") {
+		Ball* bal = new Ball();
+		bal->speed = elem->FloatAttribute("speed");
+
+		obj->AddComponent(bal);
 	}
 }

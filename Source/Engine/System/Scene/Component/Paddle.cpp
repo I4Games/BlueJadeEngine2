@@ -12,6 +12,7 @@ void Paddle::Init() {
 }
 
 void Paddle::Update(float msec) {
+
 	float xDir = 0.0f;
 	if (InputManager::GetInstance()->IsKeyPressed(sf::Keyboard::Right)) {
 		xDir = 1.0f;

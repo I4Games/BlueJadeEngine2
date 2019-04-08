@@ -6,6 +6,7 @@
 #include "Component\SpriteRenderer.h"
 #include "Component\AudioPlayer.h"
 #include "Component\Paddle.h"
+#include "Component\Brick.h"
 
 SceneManager* SceneManager::Instance = 0;
 std::string SceneManager::assetRoot = "../Assets/";
@@ -33,6 +34,9 @@ BaseComponent* SceneManager::MakeComponent(ComponentType cType) {
 		break;
 	case C_Paddle:
 		return new Paddle();
+		break;
+	case C_Brick:
+		return new Brick();
 		break;
 	}
 

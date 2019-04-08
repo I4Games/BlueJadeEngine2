@@ -164,6 +164,7 @@
     <ClCompile Include="..\Source\Engine\System\Physics\PhysicsSystem.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\AudioPlayer.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\BaseComponent.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\Brick.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\Paddle.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\Script.cpp" />
@@ -191,6 +192,7 @@
     <ClInclude Include="..\Source\Engine\System\Physics\PhysicsSystem.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\AudioPlayer.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\BaseComponent.h" />
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\Brick.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\Paddle.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\Script.h" />

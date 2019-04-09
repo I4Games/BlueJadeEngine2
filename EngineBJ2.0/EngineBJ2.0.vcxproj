@@ -166,10 +166,12 @@
     <ClCompile Include="..\Source\Engine\System\Scene\Component\Ball.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\BaseComponent.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\Brick.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\HudScore.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\Paddle.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\Script.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.cpp" />
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\TextRenderer.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\Component\TransformComponent.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\GameObject.cpp" />
     <ClCompile Include="..\Source\Engine\System\Scene\GameObjectManager.cpp" />
@@ -195,10 +197,12 @@
     <ClInclude Include="..\Source\Engine\System\Scene\Component\Ball.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\BaseComponent.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\Brick.h" />
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\HudScore.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\Paddle.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\PhysicsRBody.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\Script.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\SpriteRenderer.h" />
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\TextRenderer.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\Component\TransformComponent.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\GameObject.h" />
     <ClInclude Include="..\Source\Engine\System\Scene\GameObjectManager.h" />

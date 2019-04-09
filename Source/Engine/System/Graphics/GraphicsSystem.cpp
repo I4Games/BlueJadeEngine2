@@ -47,9 +47,13 @@ void GraphicsSystem::Render() {
 		window.draw(*(*i));
 		delete (*i);
 	}
+	/*for (std::vector<sf::Text>::iterator i = texts.begin(); i != texts.end(); ++i) {
+		window.draw(*i);
+	}*/
 	window.display();
 	drawables.clear();
 	shapes.clear();
+	texts.clear();
 }
 
 void GraphicsSystem::AddDrawable(sf::Drawable* d, sf::Transform* t) {
@@ -62,3 +66,16 @@ void GraphicsSystem::AddDrawable(sf::Drawable* d, sf::Transform* t) {
 void GraphicsSystem::AddShape(sf::Shape* shape) {
 	shapes.push_back(shape);
 }
+
+//void GraphicsSystem::AddText(sf::Text t, sf::Vector2f* v2) {
+//	sf::Text txt;
+//	txt = t;
+//	txt.setPosition(*v2);
+//	texts.push_back(txt);
+//}
+
+//void GraphicsSystem::AddText(sf::Text* t) {
+//	texts.push_back(t);
+//}
+
+

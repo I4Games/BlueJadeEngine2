@@ -2,6 +2,7 @@
 #include "BaseComponent.h"
 #include "PhysicsRBody.h"
 
+
 class Ball : public BaseComponent {
 public:
 	float speed;

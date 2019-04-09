@@ -12,12 +12,14 @@ class TransformComponent;
 enum ComponentType {
 	C_Transform,
 	C_SpriteRenderer,
+	C_TextRenderer,
 	C_PhysicsRBody,
 	C_AudioPlayer,
 	C_Script,
 	C_Paddle,
 	C_Brick,
-	C_Ball
+	C_Ball,
+	C_Score
 };
 
 class GameObject {

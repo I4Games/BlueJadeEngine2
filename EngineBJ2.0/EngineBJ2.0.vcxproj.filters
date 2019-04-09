@@ -126,6 +126,12 @@
     <ClCompile Include="..\Source\Engine\System\Scene\Component\Ball.cpp">
       <Filter>Source Files\Scene\Component</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\TextRenderer.cpp">
+      <Filter>Source Files\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\HudScore.cpp">
+      <Filter>Source Files\Scene\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Engine\System\BlueJadeII.h">
@@ -204,6 +210,12 @@
       <Filter>Header Files\Scene\Component</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Scene\Component\Ball.h">
+      <Filter>Header Files\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\TextRenderer.h">
+      <Filter>Header Files\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\HudScore.h">
       <Filter>Header Files\Scene\Component</Filter>
     </ClInclude>
   </ItemGroup>

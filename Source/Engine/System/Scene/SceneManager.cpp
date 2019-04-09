@@ -4,10 +4,15 @@
 #include "Component\TransformComponent.h"
 #include "Component\PhysicsRBody.h"
 #include "Component\SpriteRenderer.h"
+#include "Component\TextRenderer.h"
 #include "Component\AudioPlayer.h"
 #include "Component\Paddle.h"
 #include "Component\Brick.h"
 #include "Component\Ball.h"
+#include "Component\HudScore.h"
+
+#include "../Input/InputManager.h"
+
 
 SceneManager* SceneManager::Instance = 0;
 std::string SceneManager::assetRoot = "../Assets/";
@@ -30,6 +35,9 @@ BaseComponent* SceneManager::MakeComponent(ComponentType cType) {
 	case C_SpriteRenderer:
 		return new SpriteRenderer();
 		break;
+	case C_TextRenderer:
+		return new TextRenderer();
+		break;
 	case C_AudioPlayer:
 		return new AudioPlayer();
 		break;
@@ -42,6 +50,9 @@ BaseComponent* SceneManager::MakeComponent(ComponentType cType) {
 	case C_Ball:
 		return new Ball();
 		break;
+	/*case C_Score:
+		return new HudScore();
+		break;*/
 	}
 	return NULL;
 }
@@ -106,6 +117,24 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 
 		obj->AddComponent(c_sp);
 	}
+	else if (eStr == "TextRenderer") {
+		tinyxml2::XMLElement* fnt = elem->FirstChildElement("Font");
+		tinyxml2::XMLElement* txt = elem->FirstChildElement("Text");
+		tinyxml2::XMLElement* siz = elem->FirstChildElement("Size");
+		TextRenderer* c_txt = new TextRenderer();
+
+		std::string shortFilename = fnt->Attribute("filename");
+		std::string contain = txt ->Attribute("text");
+		int size = siz->IntAttribute("size");
+
+		c_txt->SetFont(assetRoot + shortFilename);
+		//c_txt->SetFont("../Assets/Fonts/Sansation.ttf");
+		//c_txt->SetText("Sample");
+		c_txt->SetSize(size);
+		c_txt->SetColor(sf::Color::White);
+
+		obj->AddComponent(c_txt);
+	}
 	else if (eStr == "Rigidbody") {
 		PhysicsRBody* rb = new PhysicsRBody();
 		rb->mass = elem->FloatAttribute("mass");
@@ -133,7 +162,13 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 	else if (eStr == "Ball") {
 		Ball* bal = new Ball();
 		bal->speed = elem->FloatAttribute("speed");
-
+		
 		obj->AddComponent(bal);
 	}
+	//else if (eStr == "Score") {
+	//	std::cout << " yoyoyo ";
+	//	HudScore* score = new HudScore();
+	//	//score->label->SetText(elem->Attribute("label"));
+	//	obj->AddComponent(score);
+	//}
 }

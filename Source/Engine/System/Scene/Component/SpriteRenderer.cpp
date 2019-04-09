@@ -7,7 +7,6 @@ void SpriteRenderer::SetSpriteFromFile(std::string filename) {
 	if (!image.loadFromFile(filename)) {
 		return;
 	}
-
 	texture.loadFromImage(image);
 	sprite.setTexture(texture);
 }

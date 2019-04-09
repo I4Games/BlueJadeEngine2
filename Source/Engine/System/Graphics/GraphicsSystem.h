@@ -26,6 +26,8 @@ public:
 
 	void AddDrawable(sf::Drawable* d, sf::Transform* t);
 	void AddShape(sf::Shape* shape);
+	//void AddText(sf::Text text, sf::Vector2f* v);
+	//void AddText(sf::Text* text);
 
 private:
 	static GraphicsSystem* Instance;
@@ -34,4 +36,5 @@ private:
 	sf::RenderWindow window;
 	std::vector<DrawSpec> drawables;
 	std::vector<sf::Shape*> shapes;
+	std::vector<sf::Text*> texts;
 };

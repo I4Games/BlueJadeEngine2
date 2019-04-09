@@ -17,6 +17,7 @@ void Ball::Update(float msec) {
 
 	rbody->Integrate(msec);
 
+
 	if (InputManager::GetInstance()->IsKeyPressed(sf::Keyboard::Space)) {
 		rbody->AddForce(Vector2f(150.0f, -700.0f));
 		//rbody ->currentVelocity.y = speed * yDir * (msec * 1000);

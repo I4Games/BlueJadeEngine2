@@ -12,8 +12,8 @@ public:
 	//Members
 	static GraphicsSystem* GetInstance();
 
-	int InitialWindowWidth = 1000;
-	int InitialWindowHeight = 700;
+	int WindowWidth = 1000;
+	int WindowHeight = 700;
 	std::string WindowTitle = "BlueJade-II";
 
 	//Methods
@@ -25,9 +25,8 @@ public:
 	void Render();
 
 	void AddDrawable(sf::Drawable* d, sf::Transform* t);
+	void RemoveDrawable(sf::Drawable* d, sf::Transform* t);
 	void AddShape(sf::Shape* shape);
-	//void AddText(sf::Text text, sf::Vector2f* v);
-	//void AddText(sf::Text* text);
 
 private:
 	static GraphicsSystem* Instance;

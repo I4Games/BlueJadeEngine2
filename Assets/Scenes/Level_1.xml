@@ -11,8 +11,8 @@
       <SpriteRenderer>
         <Sprite filename="Sprites/puzzlepack/png/paddleBlu.png" />
       </SpriteRenderer>
-      <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
-	  <Paddle speed="25.0" />
+      <Rigidbody mass="0" bounciness="0" obeysGravity="0" canCollide="1" dynamic="0"/>
+	  <Paddle speed="10" />
     </Components>
   </GameObject>
   
@@ -26,7 +26,7 @@
           <SpriteRenderer>
               <Sprite filename="Sprites/puzzlepack/png/element_yellow_rectangle.png" />
           </SpriteRenderer>
-          <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+          <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
       </Components>
   </GameObject>
   
@@ -40,7 +40,7 @@
           <SpriteRenderer>
               <Sprite filename="Sprites/puzzlepack/png/element_green_rectangle.png" />
           </SpriteRenderer>
-          <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+          <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
       </Components>
   </GameObject>
 
@@ -54,7 +54,7 @@
           <SpriteRenderer>
               <Sprite filename="Sprites/puzzlepack/png/element_blue_rectangle.png" />
           </SpriteRenderer>
-          <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+          <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
       </Components>
   </GameObject>
  
@@ -68,7 +68,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_red_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -82,7 +82,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_purple_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -96,7 +96,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_yellow_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -110,7 +110,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_green_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -124,7 +124,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_blue_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -138,7 +138,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_red_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -152,7 +152,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_purple_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -166,7 +166,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -180,7 +180,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_blue_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -194,7 +194,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_red_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -208,7 +208,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_purple_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -222,7 +222,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_green_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -236,7 +236,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_yellow_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -250,7 +250,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_green_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -264,7 +264,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_blue_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -278,7 +278,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_yellow_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -292,7 +292,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_purple_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
      </Components>
  </GameObject>
  
@@ -306,7 +306,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_red_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -320,7 +320,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -334,7 +334,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -348,7 +348,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_green_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -362,7 +362,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_purple_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -376,7 +376,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_yellow_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -390,7 +390,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_blue_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -404,7 +404,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_red_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -418,7 +418,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_yellow_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -432,7 +432,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_purple_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -446,7 +446,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_red_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -460,7 +460,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_blue_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -474,7 +474,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_green_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -488,7 +488,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -502,7 +502,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -516,7 +516,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_yellow_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -530,7 +530,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_green_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -544,7 +544,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_blue_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -558,7 +558,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_red_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -572,7 +572,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_purple_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -586,7 +586,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_blue_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -600,7 +600,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_green_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -614,7 +614,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_yellow_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -628,7 +628,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_red_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -642,7 +642,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_purple_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -656,7 +656,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -670,7 +670,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -684,7 +684,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -698,7 +698,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -712,7 +712,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -726,7 +726,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -740,7 +740,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -754,7 +754,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -768,7 +768,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -782,7 +782,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -796,7 +796,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1"dynamic="0"  />
      </Components>
  </GameObject>
  
@@ -810,7 +810,7 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
@@ -824,22 +824,22 @@
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
-         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" />
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
  </GameObject>
  
  <GameObject name="Ball">
      <Components>
          <Transform>
-             <Position x="490" y="628" />
+             <Position x="490" y="600" />
              <Rotation y="0" />
              <Scale x="1" y="1" />
          </Transform>
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/ballBlue.png" />
          </SpriteRenderer>
-         <Rigidbody mass="1" bounciness="1" obeysGravity="0.98" canCollide="1" />
-         <Ball speed="30" />
+         <Rigidbody mass="0" bounciness="0" obeysGravity="0" canCollide="1" dynamic="0" />
+         <Ball speed="5" initialAngle="70" />
      </Components>
  </GameObject>
  

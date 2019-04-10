@@ -13,6 +13,7 @@ public:
 	void EmptyRoot();
 	GameObject* GetGameObjectByName(std::string &name);
 	void AddGameObject(GameObject* gameObject, GameObject* parent);
+	void DestroyGameObject(GameObject* gameObject);
 
 	void Update(float msec) { rootScene->Update(msec); }
 

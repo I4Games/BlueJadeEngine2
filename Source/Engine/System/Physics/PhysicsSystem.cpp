@@ -7,6 +7,8 @@
 
 PhysicsSystem* PhysicsSystem::Instance = 0;
 
+float PhysicsSystem::TimeStep = TIME_STEP;
+
 PhysicsSystem* PhysicsSystem::GetInstance() {
 	if (!Instance) {
 		Instance = new PhysicsSystem();
@@ -20,7 +22,12 @@ void PhysicsSystem::AddRigidBody(PhysicsRBody* rigidBody) {
 	rigidBodies.push_back(rigidBody);
 }
 
+void PhysicsSystem::RemoveRigidBody(PhysicsRBody* rigidBody) {
+	rigidBodies.erase(std::remove(rigidBodies.begin(), rigidBodies.end(), rigidBody), rigidBodies.end());
+}
+
 bool PhysicsSystem::IsGrounded(PhysicsRBody* rigidBody) {
+	if (rigidBody == nullptr) return false;
 	for (std::vector<PhysicsRBody*>::iterator i = rigidBodies.begin(); i != rigidBodies.end(); ++i) {
 		PhysicsRBody* rb = *(i);
 		if (rb != rigidBody) {
@@ -38,9 +45,16 @@ bool PhysicsSystem::IsGrounded(PhysicsRBody* rigidBody) {
 }
 
 void PhysicsSystem::Update(float dT) {
-	CheckCollisions();
-	ResolveCollisions(dT);
-	IntegrateBodies(dT);
+	curTime += dT;
+	if (curTime >= TimeStep) {
+		CheckCollisions();
+		ResolveCollisions(curTime / TimeStep);
+		IntegrateBodies(curTime / TimeStep);
+
+		curTime = 0.f;
+	}
+
+	
 }
 
 float PhysicsSystem::DotProduct(sf::Vector2f a, sf::Vector2f b) {
@@ -81,28 +95,54 @@ void PhysicsSystem::CheckCollisions() {
 						collisions.erase(pair);
 					}
 
+					CollisionSide sideA = None;
+					CollisionSide sideB = None;
+
 					if (gap.x > gap.y) {
 						if (distance.x > 0) {
 							info.collisionNormal = Vector2f(1.0f, 0.0f);
+							sideA = Left;
+							sideB = Right;
 						}
 						else {
 							info.collisionNormal = Vector2f(-1.0f, 0.0f);
+							sideA = Right;
+							sideB = Left;
 						}
 						info.penetration = gap.x;
 					}
 					else {
 						if (distance.y > 0) {
 							info.collisionNormal = Vector2f(0.0f, 1.0f);
+							sideA = Down;
+							sideB = Up;
 						}
 						else {
 							info.collisionNormal = Vector2f(0.0f, -1.0f);
+							sideA = Up;
+							sideB = Down;
 						}
 						info.penetration = gap.y;
 					}
 					collisions[pair] = info;
+
+					if (bodyA->collidedWith.find(bodyB) == bodyA->collidedWith.end()) {
+						bodyA->GetGameObject()->OnCollisionDetected(bodyB->GetGameObject(), sideA);
+						bodyA->collidedWith.insert(bodyB);
+					}
+					if (bodyB->collidedWith.find(bodyA) == bodyB->collidedWith.end()) {
+						bodyB->GetGameObject()->OnCollisionDetected(bodyA->GetGameObject(), sideB);
+						bodyB->collidedWith.insert(bodyA);
+					}
+					
 				}
 				else if (collisions.count(pair)) {
 					collisions.erase(pair);
+					bodyA->collidedWith.erase(bodyB);
+					bodyB->collidedWith.erase(bodyA);
+				}else {
+					bodyA->collidedWith.erase(bodyB);
+					bodyB->collidedWith.erase(bodyA);
 				}
 			}
 		}
@@ -112,6 +152,16 @@ void PhysicsSystem::CheckCollisions() {
 void PhysicsSystem::ResolveCollisions(float dT) {
 	for (std::map<std::pair<PhysicsRBody*,PhysicsRBody*>, CollisionInfo>::iterator i = collisions.begin(); i != collisions.end(); ++i) {
 		std::pair<PhysicsRBody*,PhysicsRBody*> p = (*i).first;
+
+		if (!p.first->dynamic && !p.second->dynamic) continue;
+		if (p.first == nullptr || p.second == nullptr) continue;
+		
+		if (std::find(rigidBodies.begin(), rigidBodies.end(), p.first) == rigidBodies.end()) {
+			continue;
+		}
+		if (std::find(rigidBodies.begin(), rigidBodies.end(), p.second) == rigidBodies.end()) {
+			continue;
+		}
 
 		float minBounce = std::min(p.first->bounciness, p.second->bounciness);
 		float velAlongNormal = DotProduct(p.second->currentVelocity - p.first->currentVelocity,
@@ -136,20 +186,18 @@ void PhysicsSystem::ResolveCollisions(float dT) {
 
 		sf::Vector2f impulse = k * collisions[p].collisionNormal;
 
-		p.first->AddForce(-impulse / dT);
-		p.second->AddForce(impulse / dT);
+		if(p.first->dynamic) p.first->AddForce(-impulse / dT);
+		if(p.second->dynamic) p.second->AddForce(impulse / dT);
 
 		if (std::abs(collisions[p].penetration) > 0.01f) {
 			PositionalCorrection(p);
 		}
-
-		//Call collision event
-		p.first->GetGameObject()->OnCollisionDetected(p.second->GetGameObject());
-		p.second->GetGameObject()->OnCollisionDetected(p.first->GetGameObject());
 	}
+	collisions.clear();
 }
 
 void PhysicsSystem::PositionalCorrection(std::pair<PhysicsRBody*,PhysicsRBody*> c) {
+	if (c.first == nullptr || c.second == nullptr) return;
 	float percent = 0.2f;
 
 	float invMassA, invMassB;

@@ -1,6 +1,7 @@
 #include "Paddle.h"
 #include "../GameObject.h"
 #include "../../Input/InputManager.h"
+#include "../../Scene/GameObjectManager.h"
 #include <SFML/Graphics.hpp>
 
 ComponentType Paddle::GetComponentType() {
@@ -20,9 +21,8 @@ void Paddle::Update(float msec) {
 		xDir = -1.0f;
 	}
 
-	rbody->currentVelocity.x = speed * xDir * (msec * 1000);
+	rbody->currentVelocity.x = speed * xDir;
 }
 
-void Paddle::OnCollisionDetected(GameObject* other) {
-
+void Paddle::OnCollisionDetected(GameObject* other, CollisionSide side) {
 }

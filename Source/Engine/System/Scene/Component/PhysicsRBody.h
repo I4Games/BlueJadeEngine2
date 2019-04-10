@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "BaseComponent.h"
+#include <set>
 
 #define DEFAULT_MASS 1.0f
 #define DEFAULT_BOUNCINESS 1.0f
@@ -28,6 +29,9 @@ public:
 
 	bool grounded;
 	bool canCollide;
+	bool dynamic;
+
+	std::set<PhysicsRBody*> collidedWith;
 
 	AABB aabb;
 

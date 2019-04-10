@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <SFML/Graphics.hpp>
+#include "../Physics/PhysicsSystem.h"
 
 using namespace sf;
 
@@ -19,7 +20,6 @@ enum ComponentType {
 	C_Paddle,
 	C_Brick,
 	C_Ball,
-	C_Score
 };
 
 class GameObject {
@@ -33,7 +33,8 @@ public:
 	std::string GetName();
 	std::string GetTag();
 	GameObject* GetParent();
-	std::vector<GameObject*> GetChildren() { return children; }
+	std::vector<GameObject*>& GetChildren() { return children; }
+	std::vector<BaseComponent*>& GetComponents() { return components; }
 	
 	void SetParent(GameObject* p);
 	void AddChild(GameObject* s);
@@ -51,7 +52,7 @@ public:
 	virtual void Update(float msec);
 
 	//Events
-	virtual void OnCollisionDetected(GameObject* other);
+	virtual void OnCollisionDetected(GameObject* other, CollisionSide side);
 
 protected:
 	GameObject* parent;

@@ -12,5 +12,5 @@ public:
 	virtual void Update(float msec);
 
 	//Events
-	virtual void OnCollisionDetected(GameObject* other);
+	virtual void OnCollisionDetected(GameObject* other, CollisionSide side);
 };

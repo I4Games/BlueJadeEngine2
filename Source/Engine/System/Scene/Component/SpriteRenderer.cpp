@@ -2,6 +2,10 @@
 #include "../GameObject.h"
 #include "../../Graphics/GraphicsSystem.h"
 
+SpriteRenderer::~SpriteRenderer() {
+	GraphicsSystem::GetInstance()->RemoveDrawable(&sprite, &(gameObject->GetWorldTransform()));
+}
+
 void SpriteRenderer::SetSpriteFromFile(std::string filename) {
 	sf::Image image;
 	if (!image.loadFromFile(filename)) {

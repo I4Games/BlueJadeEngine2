@@ -45,3 +45,16 @@ void GameObjectManager::AddGameObject(GameObject* gameObject, GameObject* parent
 		gameObject->SetParent(NULL);
 	}
 }
+
+void GameObjectManager::DestroyGameObject(GameObject* gameObject) {
+	if (gameObject->GetParent() != nullptr) {
+		std::vector<GameObject*>& siblings = gameObject->GetParent()->GetChildren();
+		siblings.erase(std::remove(siblings.begin(), siblings.end(), gameObject), siblings.end());
+	}
+	else {
+		std::vector<GameObject*>& roots = rootScene->GetChildren();
+		roots.erase(std::remove(roots.begin(), roots.end(), gameObject), roots.end());
+	}
+
+	delete gameObject;
+}

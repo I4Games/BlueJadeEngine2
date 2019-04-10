@@ -1,6 +1,10 @@
 #include "Ball.h"
 #include "../GameObject.h"
+#include "TransformComponent.h"
 #include "../../Input/InputManager.h"
+#include "../../Graphics/GraphicsSystem.h"
+#include "../GameObjectManager.h"
+
 #include <SFML/Graphics.hpp>
 
 ComponentType Ball::GetComponentType() {
@@ -9,28 +13,41 @@ ComponentType Ball::GetComponentType() {
 
 void Ball::Init() {
 	rbody = (PhysicsRBody*)(gameObject->GetComponent(C_PhysicsRBody));
+	xDir = cos(initialAngle * 3.14f / 180.f);
+	yDir = -sin(initialAngle * 3.14f / 180.f);
 }
 
 void Ball::Update(float msec) {
-	float xDir = 1.0f;
-	float yDir = -1.0f;
+	Vector2f pos = gameObject->Transform()->GetPosition();
+	float width = GraphicsSystem::GetInstance()->WindowWidth;
+	float height = GraphicsSystem::GetInstance()->WindowHeight;
 
-	rbody->Integrate(msec);
-
-
-	if (InputManager::GetInstance()->IsKeyPressed(sf::Keyboard::Space)) {
-		rbody->AddForce(Vector2f(150.0f, -700.0f));
-		//rbody ->currentVelocity.y = speed * yDir * (msec * 1000);
+	if ((pos.x > width && xDir > 0.f) || (pos.x < 0 && xDir < 0.f)) {
+		xDir *= -1.f;
+	}else if ((pos.y < 0 && yDir < 0.f) || (pos.y > height && yDir > 0.f)) {
+		yDir *= -1.f;
 	}
+
+	rbody->currentVelocity.x = xDir * speed;
+	rbody->currentVelocity.y = yDir * speed;
 }
 
-void Ball::OnCollisionDetected(GameObject* other) {
+void Ball::OnCollisionDetected(GameObject* other, CollisionSide side) {
 	
-	if (other->GetName() == "Paddle") {
-		std::cout << " hit Paddle ";
-	}
-	if (other->GetName() == "Brick") {
-		std::cout << " hit brick ";
-		//rbody->currentVelocity.y *= -1.0f;
+	if (other->GetName() == "Paddle" || other->GetName() == "Brick") {
+		switch (side) {
+			case Up:
+			case Down:
+				yDir *= -1;
+				break;
+			case Left:
+			case Right:
+				xDir *= -1;
+				break;
+		}
+
+		if (other->GetName() == "Brick") {
+			GameObjectManager::GetInstance()->DestroyGameObject(other);
+		}
 	}
 }

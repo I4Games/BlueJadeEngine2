@@ -50,9 +50,6 @@ BaseComponent* SceneManager::MakeComponent(ComponentType cType) {
 	case C_Ball:
 		return new Ball();
 		break;
-	/*case C_Score:
-		return new HudScore();
-		break;*/
 	}
 	return NULL;
 }
@@ -128,8 +125,7 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 		int size = siz->IntAttribute("size");
 
 		c_txt->SetFont(assetRoot + shortFilename);
-		//c_txt->SetFont("../Assets/Fonts/Sansation.ttf");
-		//c_txt->SetText("Sample");
+		c_txt->SetText(contain);
 		c_txt->SetSize(size);
 		c_txt->SetColor(sf::Color::White);
 
@@ -141,6 +137,7 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 		rb->bounciness = elem->FloatAttribute("bounciness");
 		rb->obeysGravity = elem->BoolAttribute("obeysGravity");
 		rb->canCollide = elem->BoolAttribute("canCollide");
+		rb->dynamic = elem->BoolAttribute("dynamic");
 
 		obj->AddComponent(rb);
 	}
@@ -162,13 +159,8 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 	else if (eStr == "Ball") {
 		Ball* bal = new Ball();
 		bal->speed = elem->FloatAttribute("speed");
+		bal->initialAngle = elem->FloatAttribute("initialAngle");
 		
 		obj->AddComponent(bal);
 	}
-	//else if (eStr == "Score") {
-	//	std::cout << " yoyoyo ";
-	//	HudScore* score = new HudScore();
-	//	//score->label->SetText(elem->Attribute("label"));
-	//	obj->AddComponent(score);
-	//}
 }

@@ -108,8 +108,8 @@ void GameObject::Update(float msec) {
 	}
 }
 
-void GameObject::OnCollisionDetected(GameObject* other) {
+void GameObject::OnCollisionDetected(GameObject* other, CollisionSide side) {
 	for (auto i = components.begin(); i != components.end(); ++i) {
-		(*i)->OnCollisionDetected(other);
+		(*i)->OnCollisionDetected(other, side);
 	}
 }

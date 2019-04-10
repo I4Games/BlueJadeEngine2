@@ -6,8 +6,10 @@ class TextRenderer : public BaseComponent {
 public:
 	//Members
 	sf::Text text;
+	sf::Font font;
 
 	//Methods
+	~TextRenderer();
 	void SetFont(std::string filename);
 
 	void SetText(std::string text);

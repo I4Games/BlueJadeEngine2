@@ -16,6 +16,7 @@ public:
 	void Translate(sf::Vector2f t);
 	void Rotate(float r);
 	void Scale(sf::Vector2f s);
+	Vector2f GetPosition();
 
 	//Base Component
 	virtual void Update(float msec);

@@ -19,6 +19,7 @@ void PhysicsRBody::Init() {
 }
 
 PhysicsRBody::~PhysicsRBody() {
+	engine->RemoveRigidBody(this);
 }
 
 void PhysicsRBody::AddForce(sf::Vector2f force) {

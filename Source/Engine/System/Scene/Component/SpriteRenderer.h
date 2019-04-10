@@ -8,6 +8,7 @@ public:
 	sf::Sprite sprite;
 
 	//Methods
+	~SpriteRenderer();
 	void SetSpriteFromFile(std::string filename);
 
 	//BaseComponent

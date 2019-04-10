@@ -35,6 +35,10 @@ void TransformComponent::Scale(sf::Vector2f s) {
 	scale += s;
 }
 
+Vector2f TransformComponent::GetPosition() {
+	return translation;
+}
+
 void TransformComponent::Update(float msec) {
 	transform = sf::Transform::Identity;
 	transform.translate(translation).rotate(rotation).scale(scale);

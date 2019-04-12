@@ -21,9 +21,7 @@ void AudioSystem::StopBGM() {
 	currentBGM.stop();
 }
 
-sf::Sound& AudioSystem::LoadSound(sf::SoundBuffer& buffer, std::string filename) {
-	sf::Sound res;
+void AudioSystem::LoadSound(sf::SoundBuffer& buffer, sf::Sound& sound, std::string filename) {
 	buffer.loadFromFile(filename);
-	res.setBuffer(buffer);
-	return res;
+	sound.setBuffer(buffer);
 }

@@ -18,6 +18,8 @@ public:
 	void Scale(sf::Vector2f s);
 	Vector2f GetPosition();
 
+	void SetPosition(Vector2f pos);
+
 	//Base Component
 	virtual void Update(float msec);
 	virtual void Init() {};

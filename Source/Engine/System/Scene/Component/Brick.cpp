@@ -1,4 +1,4 @@
-#include "Brick.h"
+.include "Brick.h"
 #include "../GameObject.h"
 #include "../../Input/InputManager.h"
 #include "../GameObjectManager.h"

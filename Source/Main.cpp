@@ -25,7 +25,7 @@ int main(){
 		return 1;
 	}
 
-	mGameApp->OpenScene("../Assets/Scenes/Level_1.xml");
+	mGameApp->OpenScene("Level_1.xml");
 	
 	mGameApp->Start();
 

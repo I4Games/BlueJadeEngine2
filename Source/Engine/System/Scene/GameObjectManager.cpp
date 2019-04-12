@@ -26,11 +26,7 @@ void GameObjectManager::SetRootGameObject(GameObject* newRoot) {
 }
 
 void GameObjectManager::EmptyRoot() {
-	std::vector<GameObject*> root = GameObjectManager::GetInstance()->rootScene->GetChildren();
-	for (auto it = root.begin(); it != root.end(); ++it) {
-		delete (*it);
-	}
-	root.clear();
+	rootScene->RemoveChildren();
 }
 
 GameObject* GameObjectManager::GetGameObjectByName(std::string &name) {

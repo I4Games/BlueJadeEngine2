@@ -4,6 +4,8 @@
 #include "../../Input/InputManager.h"
 #include "../../Graphics/GraphicsSystem.h"
 #include "../GameObjectManager.h"
+#include "ArkanoidManager.h"
+#include "TransformComponent.h"
 
 #include <SFML/Graphics.hpp>
 
@@ -15,17 +17,25 @@ void Ball::Init() {
 	rbody = (PhysicsRBody*)(gameObject->GetComponent(C_PhysicsRBody));
 	xDir = cos(initialAngle * 3.14f / 180.f);
 	yDir = -sin(initialAngle * 3.14f / 180.f);
+
+	audioPlayer = (AudioPlayer*)gameObject->GetComponent(C_AudioPlayer);
+	originalPosition = gameObject->Transform()->GetPosition();
 }
 
 void Ball::Update(float msec) {
-	Vector2f pos = gameObject->Transform()->GetPosition();
+	sf::Vector2f pos = gameObject->Transform()->GetPosition();
 	float width = GraphicsSystem::GetInstance()->WindowWidth;
 	float height = GraphicsSystem::GetInstance()->WindowHeight;
 
 	if ((pos.x > width && xDir > 0.f) || (pos.x < 0 && xDir < 0.f)) {
 		xDir *= -1.f;
-	}else if ((pos.y < 0 && yDir < 0.f) || (pos.y > height && yDir > 0.f)) {
+	}else if ((pos.y < 0 && yDir < 0.f)) {
 		yDir *= -1.f;
+	}
+	else if (pos.y > height && yDir > 0.f) {
+		gameObject->Transform()->SetPosition(originalPosition);
+		yDir = -1.f;
+		ArkanoidManager::GetInstance()->OnLifeLost();
 	}
 
 	rbody->currentVelocity.x = xDir * speed;
@@ -48,6 +58,9 @@ void Ball::OnCollisionDetected(GameObject* other, CollisionSide side) {
 
 		if (other->GetName() == "Brick") {
 			GameObjectManager::GetInstance()->DestroyGameObject(other);
+			ArkanoidManager::GetInstance()->OnBrickDestroyed();
+		}else {
+			audioPlayer->PlaySound();
 		}
 	}
 }

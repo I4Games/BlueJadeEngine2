@@ -18,8 +18,8 @@ enum ComponentType {
 	C_AudioPlayer,
 	C_Script,
 	C_Paddle,
-	C_Brick,
 	C_Ball,
+	C_ArkanoidManager
 };
 
 class GameObject {
@@ -44,6 +44,8 @@ public:
 	void Translate(sf::Vector2f t);
 	void Rotate(float r);
 	void Scale(sf::Vector2f s);
+
+	void RemoveChildren();
 
 	GameObject* FindChildByName(std::string &name);
 

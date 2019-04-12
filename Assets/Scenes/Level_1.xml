@@ -839,7 +839,8 @@
              <Sprite filename="Sprites/puzzlepack/png/ballBlue.png" />
          </SpriteRenderer>
          <Rigidbody mass="0" bounciness="0" obeysGravity="0" canCollide="1" dynamic="0" />
-         <Ball speed="5" initialAngle="70" />
+		 <AudioPlayer bgm="None" sound="../Assets/Sound/paddle_hit.wav" />
+         <Ball speed="8" initialAngle="70" />
      </Components>
  </GameObject>
  
@@ -855,6 +856,33 @@
              <Text text="Score" />
              <Size size="30" />
          </TextRenderer>
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Lives">
+     <Components>
+         <Transform>
+             <Position x="900" y="0" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <TextRenderer>
+             <Font filename="Fonts/Sansation.ttf" />
+             <Text text="Lives" />
+             <Size size="30" />
+         </TextRenderer>
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="ArkanoidManager">
+     <Components>
+         <Transform>
+             <Position x="0" y="0" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+		 <AudioPlayer bgm="../Assets/Sound/doctor.ogg" sound="../Assets/Sound/brick_break.wav" />
+		 <ArkanoidManager scoreText="Score" livesText="Lives" loseLevel="Lose.xml"/>
      </Components>
  </GameObject>
  

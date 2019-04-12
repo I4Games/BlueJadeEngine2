@@ -7,9 +7,9 @@
 #include "Component\TextRenderer.h"
 #include "Component\AudioPlayer.h"
 #include "Component\Paddle.h"
-#include "Component\Brick.h"
 #include "Component\Ball.h"
 #include "Component\HudScore.h"
+#include "Component\ArkanoidManager.h"
 
 #include "../Input/InputManager.h"
 
@@ -44,11 +44,11 @@ BaseComponent* SceneManager::MakeComponent(ComponentType cType) {
 	case C_Paddle:
 		return new Paddle();
 		break;
-	case C_Brick:
-		return new Brick();
-		break;
 	case C_Ball:
 		return new Ball();
+		break;
+	case C_ArkanoidManager:
+		return new ArkanoidManager();
 		break;
 	}
 	return NULL;
@@ -56,7 +56,8 @@ BaseComponent* SceneManager::MakeComponent(ComponentType cType) {
 
 void SceneManager::BuildScene(std::string xmlFilename) {
 	tinyxml2::XMLDocument doc;
-	auto error = doc.LoadFile(xmlFilename.c_str());
+	std::string fullPath = ScenePath + xmlFilename;
+	auto error = doc.LoadFile(fullPath.c_str());
 	GameObjectManager::GetInstance()->EmptyRoot();
 
 	tinyxml2::XMLElement* levelParent = doc.FirstChildElement("Level");
@@ -64,6 +65,18 @@ void SceneManager::BuildScene(std::string xmlFilename) {
 
 	for (gChild = levelParent->FirstChild(); gChild != 0; gChild = gChild->NextSibling()) {
 		AddGameObject(gChild, NULL);
+	}
+}
+
+void SceneManager::RequestSceneChange(std::string levelName) {
+	pendingSceneChange = true;
+	nextScene = levelName;
+}
+
+void SceneManager::Update() {
+	if (pendingSceneChange) {
+		pendingSceneChange = false;
+		BuildScene(nextScene);
 	}
 }
 
@@ -144,6 +157,13 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 	else if (eStr == "AudioPlayer") {
 		AudioPlayer* ap = new AudioPlayer();
 
+		std::string bgmStr = elem->Attribute("bgm");
+
+		if (bgmStr != "None") {
+			ap->playBGM(bgmStr);
+		}
+		ap->LoadSound(elem->Attribute("sound"));
+
 		obj->AddComponent(ap);
 	}
 	else if (eStr == "Paddle") {
@@ -152,15 +172,28 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 
 		obj->AddComponent(pad);
 	}
-	else if (eStr == "Brick") {
-		Brick* brk = new Brick();
-		obj->AddComponent(brk);
-	}
 	else if (eStr == "Ball") {
 		Ball* bal = new Ball();
 		bal->speed = elem->FloatAttribute("speed");
 		bal->initialAngle = elem->FloatAttribute("initialAngle");
 		
 		obj->AddComponent(bal);
+	}
+	else if (eStr == "ArkanoidManager") {
+		ArkanoidManager* ark = new ArkanoidManager();
+		ark->SetScore(0);
+		ark->SetLives(3);
+		ark->loseLevel = elem->Attribute("loseLevel");
+
+		std::string scoreName = elem->Attribute("scoreText");
+		std::string livesName = elem->Attribute("livesText");
+
+		GameObject* scoreObj = GameObjectManager::GetInstance()->GetGameObjectByName(scoreName);
+		ark->scoreText = (TextRenderer*)scoreObj->GetComponent(C_TextRenderer);
+
+		GameObject* livesObj = GameObjectManager::GetInstance()->GetGameObjectByName(livesName);
+		ark->livesText = (TextRenderer*)livesObj->GetComponent(C_TextRenderer);
+
+		obj->AddComponent(ark);
 	}
 }

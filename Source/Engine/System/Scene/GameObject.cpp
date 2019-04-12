@@ -88,6 +88,13 @@ GameObject* GameObject::FindChildByName(std::string &name) {
 	return NULL;
 }
 
+void GameObject::RemoveChildren() {
+	for (auto it = children.begin(); it != children.end(); ++it) {
+		delete (*it);
+	}
+	children.clear();
+}
+
 BaseComponent* GameObject::GetComponent(ComponentType cType) {
 	for (std::vector<BaseComponent*>::iterator i = components.begin(); i != components.end(); ++i) {
 		if (cType == (*i)->GetComponentType()) {

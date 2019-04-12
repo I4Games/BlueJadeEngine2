@@ -9,6 +9,8 @@ public:
 	sf::Sound sound;
 	sf::SoundBuffer buffer;
 
+	~AudioPlayer();
+
 	void playBGM(std::string filename);
 	void stopBGM();
 	void LoadSound(std::string filename);

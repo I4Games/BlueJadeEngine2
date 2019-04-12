@@ -13,7 +13,7 @@ public:
 	bool OpenBGM(std::string filename);
 	void PlayBGM();
 	void StopBGM();
-	sf::Sound& LoadSound(sf::SoundBuffer& buffer, std::string filename);
+	void LoadSound(sf::SoundBuffer& buffer, sf::Sound& sound, std::string filename);
 
 private:
 	static AudioSystem* Instance;

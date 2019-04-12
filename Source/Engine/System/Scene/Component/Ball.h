@@ -1,7 +1,8 @@
 #pragma once
 #include "BaseComponent.h"
 #include "PhysicsRBody.h"
-
+#include "AudioPlayer.h"
+#include <SFML/Graphics.hpp>
 
 class Ball : public BaseComponent {
 protected:
@@ -12,6 +13,8 @@ public:
 	float speed;
 	PhysicsRBody* rbody;
 	float initialAngle;
+	AudioPlayer* audioPlayer;
+	sf::Vector2f originalPosition;
 
 	//Base Component
 	virtual ComponentType GetComponentType();

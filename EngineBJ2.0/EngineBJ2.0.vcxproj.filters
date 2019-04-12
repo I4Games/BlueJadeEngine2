@@ -120,13 +120,13 @@
     <ClCompile Include="..\Source\Engine\System\Input\InputManager.cpp">
       <Filter>Source Files\Input</Filter>
     </ClCompile>
-    <ClCompile Include="..\Source\Engine\System\Scene\Component\Brick.cpp">
-      <Filter>Source Files\Scene\Component</Filter>
-    </ClCompile>
     <ClCompile Include="..\Source\Engine\System\Scene\Component\Ball.cpp">
       <Filter>Source Files\Scene\Component</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\Engine\System\Scene\Component\TextRenderer.cpp">
+      <Filter>Source Files\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Engine\System\Scene\Component\ArkanoidManager.cpp">
       <Filter>Source Files\Scene\Component</Filter>
     </ClCompile>
   </ItemGroup>
@@ -203,13 +203,13 @@
     <ClInclude Include="..\Source\Engine\System\Scene\Component\Paddle.h">
       <Filter>Header Files\Scene\Component</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Engine\System\Scene\Component\Brick.h">
-      <Filter>Header Files\Scene\Component</Filter>
-    </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Scene\Component\Ball.h">
       <Filter>Header Files\Scene\Component</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\Engine\System\Scene\Component\TextRenderer.h">
+      <Filter>Header Files\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Engine\System\Scene\Component\ArkanoidManager.h">
       <Filter>Header Files\Scene\Component</Filter>
     </ClInclude>
   </ItemGroup>

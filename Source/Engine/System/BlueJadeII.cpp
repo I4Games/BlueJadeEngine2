@@ -265,6 +265,7 @@ void BlueJadeII::Update()
 		Time elapsed = clock.restart();
 
 		EventManager::GetInstance()->VUpdate();
+		SceneManager::GetInstance()->Update();
 		GameObjectManager::GetInstance()->Update(elapsed.asSeconds());
 		InputManager::GetInstance()->Update();
 		PhysicsSystem::GetInstance()->Update(elapsed.asSeconds());

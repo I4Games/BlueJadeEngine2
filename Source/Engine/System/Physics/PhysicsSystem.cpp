@@ -47,14 +47,15 @@ bool PhysicsSystem::IsGrounded(PhysicsRBody* rigidBody) {
 void PhysicsSystem::Update(float dT) {
 	curTime += dT;
 	if (curTime >= TimeStep) {
-		CheckCollisions();
-		ResolveCollisions(curTime / TimeStep);
-		IntegrateBodies(curTime / TimeStep);
+
+		if (rigidBodies.size() > 0) {
+			CheckCollisions();
+			ResolveCollisions(curTime / TimeStep);
+			IntegrateBodies(curTime / TimeStep);
+		}
 
 		curTime = 0.f;
 	}
-
-	
 }
 
 float PhysicsSystem::DotProduct(sf::Vector2f a, sf::Vector2f b) {

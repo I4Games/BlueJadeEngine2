@@ -7,6 +7,7 @@ GameObject::GameObject(std::string& name) {
 	this->name = name;
 	transform = new TransformComponent();
 	AddComponent(transform);
+	initialized = false;
 }
 
 GameObject::~GameObject(void) {
@@ -54,7 +55,7 @@ void GameObject::AddChild(GameObject* s) {
 void GameObject::AddComponent(BaseComponent* c) {
 	components.push_back(c);
 	c->SetGameObject(this);
-	c->Init();
+	if(initialized) c->Init();
 }
 
 void GameObject::SetTag(std::string newTag) {
@@ -88,6 +89,18 @@ GameObject* GameObject::FindChildByName(std::string &name) {
 	return NULL;
 }
 
+std::vector<GameObject*> GameObject::FindChildrenByName(std::string &name) {
+	std::vector<GameObject*> res;
+	for (auto it = children.begin(); it != children.end(); ++it) {
+		if ((*it)->GetName() == name) {
+			res.push_back((*it));
+		}
+		std::vector<GameObject*> childRes = (*it)->FindChildrenByName(name);
+		res.insert(res.end(), childRes.begin(), childRes.end());
+	}
+	return res;
+}
+
 void GameObject::RemoveChildren() {
 	for (auto it = children.begin(); it != children.end(); ++it) {
 		delete (*it);
@@ -103,6 +116,16 @@ BaseComponent* GameObject::GetComponent(ComponentType cType) {
 	}
 
 	return NULL;
+}
+
+void GameObject::Init() {
+	for (auto it = components.begin(); it != components.end(); ++it) {
+		(*it)->Init();
+	}
+	for (auto it = children.begin(); it != children.end(); ++it) {
+		(*it)->Init();
+	}
+	initialized = true;
 }
 
 void GameObject::Update(float msec) {

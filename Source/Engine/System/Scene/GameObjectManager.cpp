@@ -27,10 +27,15 @@ void GameObjectManager::SetRootGameObject(GameObject* newRoot) {
 
 void GameObjectManager::EmptyRoot() {
 	rootScene->RemoveChildren();
+	rootScene->SetInitialized(false);
 }
 
 GameObject* GameObjectManager::GetGameObjectByName(std::string &name) {
 	return rootScene->FindChildByName(name);
+}
+
+std::vector<GameObject*> GameObjectManager::GetGameObjectsByName(std::string name) {
+	return rootScene->FindChildrenByName(name);
 }
 
 void GameObjectManager::AddGameObject(GameObject* gameObject, GameObject* parent) {

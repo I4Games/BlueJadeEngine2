@@ -66,6 +66,8 @@ void SceneManager::BuildScene(std::string xmlFilename) {
 	for (gChild = levelParent->FirstChild(); gChild != 0; gChild = gChild->NextSibling()) {
 		AddGameObject(gChild, NULL);
 	}
+
+	GameObjectManager::GetInstance()->Init();
 }
 
 void SceneManager::RequestSceneChange(std::string levelName) {
@@ -184,15 +186,9 @@ void SceneManager::AddComponent(GameObject* obj, tinyxml2::XMLElement* elem) {
 		ark->SetScore(0);
 		ark->SetLives(3);
 		ark->loseLevel = elem->Attribute("loseLevel");
-
-		std::string scoreName = elem->Attribute("scoreText");
-		std::string livesName = elem->Attribute("livesText");
-
-		GameObject* scoreObj = GameObjectManager::GetInstance()->GetGameObjectByName(scoreName);
-		ark->scoreText = (TextRenderer*)scoreObj->GetComponent(C_TextRenderer);
-
-		GameObject* livesObj = GameObjectManager::GetInstance()->GetGameObjectByName(livesName);
-		ark->livesText = (TextRenderer*)livesObj->GetComponent(C_TextRenderer);
+		ark->winLevel = elem->Attribute("winLevel");
+		ark->scoreObjName = elem->Attribute("scoreText");
+		ark->livesObjName = elem->Attribute("livesText");
 
 		obj->AddComponent(ark);
 	}

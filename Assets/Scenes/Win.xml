@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Level>
+ <GameObject name="StatusText">
+     <Components>
+         <Transform>
+             <Position x="370" y="300" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <TextRenderer>
+             <Font filename="Fonts/Sansation.ttf" />
+             <Text text="You Won!" />
+             <Size size="60" />
+         </TextRenderer>
+     </Components>
+ </GameObject>
+ 
+</Level>

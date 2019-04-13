@@ -48,9 +48,14 @@ public:
 	void RemoveChildren();
 
 	GameObject* FindChildByName(std::string &name);
+	std::vector<GameObject*> FindChildrenByName(std::string &name);
 
 	BaseComponent* GetComponent(ComponentType cType);
 
+	bool IsInitialized() { return initialized; }
+	void SetInitialized(bool i) { initialized = i; }
+
+	virtual void Init();
 	virtual void Update(float msec);
 
 	//Events
@@ -63,6 +68,7 @@ protected:
 	TransformComponent* transform;
 	std::vector<GameObject*> children;
 	std::vector<BaseComponent*> components;
+	bool initialized;
 };
 
 #endif

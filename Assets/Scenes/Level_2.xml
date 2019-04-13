@@ -9,7 +9,7 @@
              <Scale x="1" y="1" />
          </Transform>
 		 <AudioPlayer bgm="../Assets/Sound/doctor.ogg" sound="../Assets/Sound/brick_break.wav" />
-		 <ArkanoidManager scoreText="Score" livesText="Lives" loseLevel="Lose.xml" winLevel="Level_2.xml"/>
+		 <ArkanoidManager scoreText="Score" livesText="Lives" loseLevel="Lose.xml" winLevel="Win.xml"/>
      </Components>
  </GameObject>
     
@@ -171,6 +171,20 @@
  <GameObject name="Brick">
      <Components>
          <Transform>
+             <Position x="85" y="135" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0"/>
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
              <Position x="150" y="135" />
              <Rotation y="0" />
              <Scale x="1" y="1" />
@@ -303,6 +317,34 @@
          </Transform>
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_red_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="800" y="135" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="85" y="170" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
          <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>
@@ -451,6 +493,34 @@
  <GameObject name="Brick">
      <Components>
          <Transform>
+             <Position x="800" y="170" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="85" y="205" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
              <Position x="150" y="205" />
              <Rotation y="0" />
              <Scale x="1" y="1" />
@@ -583,6 +653,188 @@
          </Transform>
          <SpriteRenderer>
              <Sprite filename="Sprites/puzzlepack/png/element_purple_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="800" y="205" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="85" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="150" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="215" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="280" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="345" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="410" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="475" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="540" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="605" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="670" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1"dynamic="0"  />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="735" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
+         </SpriteRenderer>
+         <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
+     </Components>
+ </GameObject>
+ 
+ <GameObject name="Brick">
+     <Components>
+         <Transform>
+             <Position x="800" y="240" />
+             <Rotation y="0" />
+             <Scale x="1" y="1" />
+         </Transform>
+         <SpriteRenderer>
+             <Sprite filename="Sprites/puzzlepack/png/element_grey_rectangle.png" />
          </SpriteRenderer>
          <Rigidbody mass="0" bounciness="1" obeysGravity="0" canCollide="1" dynamic="0" />
      </Components>

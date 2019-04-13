@@ -1,6 +1,7 @@
 #include "ArkanoidManager.h"
 #include "../GameObjectManager.h"
 #include "../SceneManager.h"
+#include "../../Input/InputManager.h"
 #include <string>
 
 ArkanoidManager* ArkanoidManager::Instance = 0;
@@ -12,6 +13,12 @@ ArkanoidManager* ArkanoidManager::GetInstance() {
 	return Instance;
 }
 
+ArkanoidManager::~ArkanoidManager() {
+	if (Instance == this) {
+		Instance = nullptr;
+	}
+}
+
 ComponentType ArkanoidManager::GetComponentType() {
 	return C_ArkanoidManager;
 }
@@ -19,10 +26,19 @@ ComponentType ArkanoidManager::GetComponentType() {
 void ArkanoidManager::Init() {
 	if (Instance != nullptr && Instance != this) {
 		GameObjectManager::GetInstance()->DestroyGameObject(gameObject);
+		return;
 	}
 
 	Instance = this;
-	audioPlayer = (AudioPlayer*) gameObject->GetComponent(C_AudioPlayer);
+	audioPlayer = (AudioPlayer*)gameObject->GetComponent(C_AudioPlayer);
+
+	targetScore = GameObjectManager::GetInstance()->GetGameObjectsByName("Brick").size();
+
+	GameObject* scoreObj = GameObjectManager::GetInstance()->GetGameObjectByName(scoreObjName);
+	scoreText = (TextRenderer*)scoreObj->GetComponent(C_TextRenderer);
+
+	GameObject* livesObj = GameObjectManager::GetInstance()->GetGameObjectByName(livesObjName);
+	livesText = (TextRenderer*)livesObj->GetComponent(C_TextRenderer);
 }
 
 void ArkanoidManager::Update(float msec) {
@@ -31,6 +47,10 @@ void ArkanoidManager::Update(float msec) {
 
 	scoreText->SetText(scor);
 	livesText->SetText(liv);
+
+	if (InputManager::GetInstance()->IsKeyDown(sf::Keyboard::N)){
+		OnWinLevel();
+	}
 }
 
 void ArkanoidManager::SetLives(int s) {
@@ -44,6 +64,10 @@ void ArkanoidManager::SetScore(int s) {
 void ArkanoidManager::OnBrickDestroyed() {
 	++score;
 	audioPlayer->PlaySound();
+
+	if (score == targetScore) {
+		OnWinLevel();
+	}
 }
 
 void ArkanoidManager::OnLifeLost() {
@@ -51,4 +75,8 @@ void ArkanoidManager::OnLifeLost() {
 	if (lives == 0) {
 		SceneManager::GetInstance()->RequestSceneChange(loseLevel);
 	}
+}
+
+void ArkanoidManager::OnWinLevel() {
+	SceneManager::GetInstance()->RequestSceneChange(winLevel);
 }
